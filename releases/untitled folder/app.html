@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <title>Apps</title> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ static_url('vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link href="{{ static_url('vendor/fonts/circular-std/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ static_url('libs/css/style.css') }}">
+    <link rel="stylesheet" href="{{ static_url('vendor/fonts/fontawesome/css/fontawesome-all.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/select2.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/sweetalert.css') }}">
+    <style type="text/css">
+        .white { background: #fff; }
+        /*html,body{height: 100% } */
+       /* .footer {
+            position: fixed;
+            height: 100px;
+            bottom: 0;
+            width: 100%;
+        }*/
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+    </style>
+    {% block style %}
+    {% end %}
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+         <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+         <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" style="color: #607D8B;" href="/"><img src="{{ static_url('img/favicon.ico') }}" style="width:32px;">parx<sup style="font-size: 50%">lite</sup></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item">
+                            <div id="custom-search" class="top-search-bar">
+                                <input class="form-control" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                       
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ static_url('images/avatar-1.jpg') }}" alt="" class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name">{{ handler.get_current_email() }}</h5>
+                                    <span class="status"></span><span class="ml-2">Available</span>
+                                </div>
+                                <!-- <a class="dropdown-item" href="/docs/"><i class="fas fa-book mr-2"></i>Documentation</a> -->
+                                <a class="dropdown-item" href="/docs/apps.html"><i class="fas fa-list mr-2"></i>Apps</a>
+                                <a class="dropdown-item" href="/settings"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" href="/logout"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <!-- <div class="dashboard-wrapper"> -->
+            <div class="container-fluid dashboard-content">
+                {% block content %}
+                {% end %}
+            <!-- </div> -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+                <div class="container-fluid">
+                    <footer class="footer fixed-bottom">
+                        <a href="#" class="scrollToTop"></a>
+
+                        <span class="logo-footer">Powered By: 
+                        <a href="http://cleverinsight.co/platform.php" target="_blank">Sparx<sup>lite</sup></a>
+                        </span>
+                        {% if handler.get_current_email() != None %}
+                        <span class="pull-right">Logged as: <b>{{ handler.get_current_email() }}</b></span>
+                        {% end %}
+                  </footer>
+                </div>
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <script src="{{ static_url('vendor/jquery/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ static_url('vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
+    <script src="{{ static_url('vendor/slimscroll/jquery.slimscroll.js') }}"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="{{ static_url('js/d3.v4.min.js') }}" charset="utf-8"></script>
+    <script src="{{ static_url('js/topojson.min.js') }}" charset="utf-8"></script>
+    <script src="{{ static_url('libs/js/main-js.js') }}"></script>
+    <script src="{{ static_url('js/underscore-min.js') }}"></script>
+    <!-- <script src="{{ static_url('js/d3.v3.min.js') }}" charset="utf-8"></script> -->
+    <script src="{{ static_url('js/d3-legend.min.js') }}"></script>
+    <script src="{{ static_url('js/d3.layout.cloud.js') }}"></script>
+    <script src="{{ static_url('js/sweetalert.min.js') }}"></script>
+    <script src="{{ static_url('js/underscore-min.js') }}" charset="utf-8"></script>
+    <script src="{{ static_url('js/is.min.js') }}" charset="utf-8"></script>
+    <script src="{{ static_url('js/litmus.js') }}" charset="utf-8"></script>
+    <script src="{{ static_url('js/treemap.js') }}" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    {% block script %}
+    {% end %}
+</body>
+ 
+</html>
