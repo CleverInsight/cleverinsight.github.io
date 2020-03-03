@@ -1,0 +1,63 @@
+{% code %}
+    import math
+    import numbers
+    import random
+    G = globals()
+    _ = globals().get
+
+    id = 'id' + str(random.randint(0, 100000))
+    selector_class = _('selector', None)
+    attributes = _('attrs', {'x_label': '', 'y_label': ''})
+
+    from lib.algo import Squarified
+    from lib.color import gradient
+
+    # dataframe sorting before plotting
+    if sort == 'asc':
+        d = data.sort_values([size], ascending=[1])
+    else:
+        d = data.sort_values([size], ascending=[0])
+
+    _size = np.array(d[size])
+    _label = np.array(d[label])
+    _color = np.array(d[color])
+
+    # Perform squarification operation
+    tm = list(Squarified(0, 0, width, height, _size).draw())
+
+    # Find color gradient values
+    _min = np.amin(_color)
+    _mean = np.mean(_color)
+    _max = np.amax(_color)
+
+
+    def label_check(d):
+        ''' 
+        Convert the given value to str and rounded float
+        '''
+        if type(d).__name__ == 'str':
+            return d
+        else:
+            return math.floor(d)
+
+
+    def curr(v):
+        return round(v/100000, 2)
+
+{% end %}
+
+<svg xmlns="http://www.w3.org/2000/svg" id="{{ id }}" width="{{ width }}" height="{{ height }}">
+    <g stroke="#000">
+    {% for (i, (x, y, w, h, v)) in enumerate(tm) %}
+     <rect x="{{'%0.3f' % x}}" y="{{'%0.3f' % y}}" width="{{'%0.3f' % w }}" height="{{'%0.3f' % h}}" fill="{{ gradient(_color[i], ((_min, '#CC0000'), (_mean, '#FFD026'), (_max, '#00FF00'))) }}">
+      <title data-toggle="tooltip" data-title="{{ _label[i] }} : Total {{ v }}">{{ _label[i] }} :  {{ math.floor(v) }}</title>
+    </rect>
+    {% end %}
+    </g>
+
+    {% for (i, (x, y, w, h, v )) in enumerate(tm) %}
+        {% set H = max(4, min(w/6, h/3)) %}
+        <text x="{{ x+w/2 }}" y="{{ y+h/2 }}" 
+            text-anchor="middle" font-family="arial" font-size='{{ H/3 }}' data-title="{{ _('title') if _('title') else ' '}} : {{ label_check(_label[i]) }} <br> {{ _('color_value') if _('color_value') else color  }} : {{ curr(_color[i]) if _('currency') else   math.floor(_color[i]) }}  <br> {{ _('size_value') if _('size_value') else size  }} : {{ math.floor(v) }}" dominant-baseline="middle">{{ label_check(_label[i]) }}</text>
+    {% end %}
+</svg>
