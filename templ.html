@@ -1,0 +1,2347 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cognito Report | 26-April-2020-00:30:1587841216</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<!-- Bulma Version 0.8.x-->
+<link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+</head>
+<body>
+<nav class="navbar has-shadow">
+<div class="container">
+<div class="navbar-brand">
+<a class="navbar-item" href="https://cognito.readthedocs.io/en/latest/">
+<img src="https://cognito.readthedocs.io/en/latest/_images/logo.png" alt="Cognito - Toolkit for Data Scientists">
+</a>
+<div class="navbar-burger burger" data-target="navMenu">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="navbar-end">
+<button class="button is-success is-small rounded" onclick="window.print()">
+Generate PDF
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="columns" style="margin-top: 30px;">
+<div class="column">
+
+<style type="text/css">
+.typeahead, .tt-query, .tt-hint {width: 396px; height: 30px; padding: 8px 12px; font-size: 24px; line-height: 30px; border: 2px solid #ccc; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; outline: none; } .typeahead {background-color: #fff; } .typeahead:focus {border: 2px solid #0097cf; } .tt-query {-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); } .tt-hint {color: #999 } .tt-menu {width: 600px; margin: 12px 0; padding: 8px 0; background-color: #fff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2); -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2); box-shadow: 0 5px 10px rgba(0,0,0,.2); } .tt-suggestion {padding: 3px 20px; font-size: 18px; line-height: 24px; } .tt-suggestion:hover {cursor: pointer; color: #fff; background-color: #0097cf; } .tt-suggestion.tt-cursor {color: #fff; background-color: #0097cf; } .tt-suggestion p {margin: 0; }
+.listen { display: none; }
+@media print {
+div.do-not-print {display: none;}
+}
+</style>
+<div class="card column is-half">
+<header class="card-header">
+<p class="card-header-title">
+Data Meta Summary
+</p>
+</header>
+<div class="card-content">
+<table class="table is-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Values</th>
+    </tr>
+    <tr>
+        <td>Total variables</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>Total Observations</td>
+        <td>2460</td>
+    </tr>
+    <tr>
+        <td>Missing Cells</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>(%) Missing Cells</td>
+        <td>0.0</td>
+    </tr>
+    <tr>
+        <td>Duplicate Rows</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>(%) Duplicate Rows</td>
+        <td>0.0</td>
+    </tr>
+    <tr>
+        <td>Total Size of Memory</td>
+        <td>255.968KiB</td>
+    </tr>
+    <tr>
+        <td>🍋 Total Categorical</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>🔟 Total Continuous</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Started at</td>
+        <td>26-Apr-20 00:30:16</td>
+    </tr>
+    <tr>
+        <td>Ended at</td>
+        <td>26-Apr-20 00:30:16</td>
+    </tr>
+    <tr>
+        <td>Time Elapsed</td>
+        <td>0.454979</td>
+    </tr>
+</table>
+</div>
+</div>
+<div class="card">
+<header class="card-header">
+<p class="card-header-title">
+Descriptive Summary
+</p>
+</header>
+<div class="card-content">
+<table class="table is-bordered">
+    <tr>
+        <th>Features</th>
+        <th>Type</th>
+        <th>Value Type</th>
+        <th>Outliers</th>
+        <th>Missing</th>
+        <th>(%) Missing</th>
+        <th>Distinct Count</th>
+        <th>Min</th>
+        <th>Mean</th>
+        <th>Max</th>
+        <th>Zeros</th>
+        <th>(%) Zeros</th>
+        <th>Memory Size</th>
+    </tr>
+    <tr>
+        <td>Upper_CI</td>
+        <td>float64</td>
+        <td>numerical</td>
+        <td>🚩</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>2031</td>
+        <td>0.801475429</td>
+        <td>500.02</td>
+        <td>12689.8763</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Lower_CI</td>
+        <td>float64</td>
+        <td>numerical</td>
+        <td>🚩</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>2031</td>
+        <td>0.191650658</td>
+        <td>448.57</td>
+        <td>12252.1237</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Data_value</td>
+        <td>float64</td>
+        <td>numerical</td>
+        <td>🚩</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>1991</td>
+        <td>0.713550407</td>
+        <td>474.3</td>
+        <td>12471.0</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Series_reference</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>144</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Period</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>36</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Cause</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>10</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Units</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>5</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Indicator</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>4</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>4</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Severity</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>3</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Population</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>3</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Validation</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>2</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Type</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>2</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+</table>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card column is-half is-offset-one-quarter do-not-print" style="margin-top: 20px;">
+<h3>Analytical Search Engine</h3>
+<div id="bloodhound">
+<input class="typeahead" type="text" placeholder="Ask your question" style="width: 608px;height: 50px;">
+<img style="position: absolute;" onclick="startDictation()" src="https://i.imgur.com/cHidSVu.gif" class="microphone" />
+</div>
+</div>
+<div class="columns is-multiline is-mobile" style="margin-top: 20px;">
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Impact of top #3 count Series_reference over Severity</h5>
+<span class="tag is-success is-large">C_A21</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Severity</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_F02B</td>
+<td>
+<div class="first" style="width: 14.722194895832201px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>f01c</td>
+<td>
+<div class="first" style="width: 14.722194895832201px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>M_F01B</td>
+<td>
+<div class="first" style="width: 14.722194895832201px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>M_F02A</td>
+<td>
+<div class="first" style="width: 14.722194895832201px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>M_F02B</td>
+<td>
+<div class="first" style="width: 14.722194895832201px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Series_reference sum over Data_value</h5>
+<span class="tag is-success is-large">677.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_I21</td>
+<td>
+<div class="first" style="width: 60.28638384890692px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">172349.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_I01</td>
+<td>
+<div class="first" style="width: 60.07437909898425px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">165194.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01A</td>
+<td>
+<div class="first" style="width: 57.00421201775788px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">89397.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F21A</td>
+<td>
+<div class="first" style="width: 56.672162847448774px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">83653.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01C</td>
+<td>
+<div class="first" style="width: 55.00558012040752px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">59941.0</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Series_reference sum over Lower_CI</h5>
+<span class="tag is-success is-large">563.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_I21</td>
+<td>
+<div class="first" style="width: 60.18820456045916px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">168997.79</div>
+</td>
+</tr>
+
+<tr>
+<td>W_I01</td>
+<td>
+<div class="first" style="width: 59.96843952790112px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">161730.7</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01A</td>
+<td>
+<div class="first" style="width: 56.859886553574306px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">86853.43</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F21A</td>
+<td>
+<div class="first" style="width: 56.53088524635631px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">81322.42</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01C</td>
+<td>
+<div class="first" style="width: 54.828670399799925px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">57857.25</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Series_reference sum over Upper_CI</h5>
+<span class="tag is-success is-large">791.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_I21</td>
+<td>
+<div class="first" style="width: 60.38267237018936px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">175700.21</div>
+</td>
+</tr>
+
+<tr>
+<td>W_I01</td>
+<td>
+<div class="first" style="width: 60.178120525015146px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">168657.3</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01A</td>
+<td>
+<div class="first" style="width: 57.144488125801416px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">91940.57</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F21A</td>
+<td>
+<div class="first" style="width: 56.80955802512625px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">85983.58</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01C</td>
+<td>
+<div class="first" style="width: 55.176443744653206px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">62024.75</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Impact of top #3 count Period over Age</h5>
+<span class="tag is-success is-large">2000</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Age</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2009</td>
+<td>
+<div class="first" style="width: 23.853423122328326px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2016</td>
+<td>
+<div class="first" style="width: 23.853423122328326px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div class="first" style="width: 23.853423122328326px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div class="first" style="width: 23.853423122328326px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div class="first" style="width: 23.853423122328326px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Period sum over Data_value</h5>
+<span class="tag is-success is-large">56383.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2016</td>
+<td>
+<div class="first" style="width: 56.23409749228038px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">76635.79</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div class="first" style="width: 55.849374927953335px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">70960.24</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div class="first" style="width: 55.70024545023998px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">68875.04</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div class="first" style="width: 55.57193157290345px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">67130.0</div>
+</td>
+</tr>
+
+<tr>
+<td>2012</td>
+<td>
+<div class="first" style="width: 55.45737222659266px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">65609.41</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Period sum over Lower_CI</h5>
+<span class="tag is-success is-large">53261.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2016</td>
+<td>
+<div class="first" style="width: 56.00289120591558px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">73172.74</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div class="first" style="width: 55.610344980042925px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">67647.72</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div class="first" style="width: 55.45446635604189px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">65571.29</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div class="first" style="width: 55.31933768527824px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">63822.91</div>
+</td>
+</tr>
+
+<tr>
+<td>2012</td>
+<td>
+<div class="first" style="width: 55.20021183793965px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">62320.29</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Period sum over Upper_CI</h5>
+<span class="tag is-success is-large">59505.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2016</td>
+<td>
+<div class="first" style="width: 56.4550833732494px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">80098.84</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div class="first" style="width: 56.07749727846652px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">74272.75</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div class="first" style="width: 55.93450701525625px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">72178.78</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div class="first" style="width: 55.81237604066818px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">70437.09</div>
+</td>
+</tr>
+
+<tr>
+<td>2012</td>
+<td>
+<div class="first" style="width: 55.70195079381202px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">68898.53</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Impact of top #3 count Type over Population</h5>
+<span class="tag is-success is-large">Moving average</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Population</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div class="first" style="width: 38.15715832288453px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">2062</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div class="first" style="width: 29.93226002642219px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">398</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Type sum over Data_value</h5>
+<span class="tag is-success is-large">35188.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div class="first" style="width: 69.69562130066542px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1131578.66</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div class="first" style="width: 52.342258220416866px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">35187.69</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Type sum over Lower_CI</h5>
+<span class="tag is-success is-large">30044.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div class="first" style="width: 69.43189154880095px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1073439.26</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div class="first" style="width: 51.55210163536146px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">30044.06</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Type sum over Upper_CI</h5>
+<span class="tag is-success is-large">40331.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div class="first" style="width: 69.946134581252px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1189718.06</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div class="first" style="width: 53.02441831870236px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">40331.32</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Impact of top #3 count Units over Validation</h5>
+<span class="tag is-success is-large">Injuries</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Validation</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div class="first" style="width: 35.43786852778987px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1197</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div class="first" style="width: 35.16312130514003px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1133</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div class="first" style="width: 20.79441541679836px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">64</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div class="first" style="width: 17.482537807332402px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div class="first" style="width: 17.482537807332402px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Units sum over Data_value</h5>
+<span class="tag is-success is-large">1033543.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div class="first" style="width: 69.24251792973068px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1033543.33</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div class="first" style="width: 58.942042160617774px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">131716.67</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div class="first" style="width: 35.31682520765721px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1168.37</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div class="first" style="width: 28.53626781066239px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">301.04</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div class="first" style="width: 18.046296136903376px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">36.94</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Units sum over Lower_CI</h5>
+<span class="tag is-success is-large">984567.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div class="first" style="width: 68.99978480248697px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">984566.74</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div class="first" style="width: 58.374353151129135px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">117579.58</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div class="first" style="width: 34.70250690710671px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1033.29</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div class="first" style="width: 28.00157994794736px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">270.51</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div class="first" style="width: 17.51377233911709px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33.21</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Units sum over Upper_CI</h5>
+<span class="tag is-success is-large">1082520.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div class="first" style="width: 69.47401075632212px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1082519.93</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div class="first" style="width: 59.45179868507px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">145853.76</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div class="first" style="width: 35.86385776463575px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1303.45</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div class="first" style="width: 29.019261068908854px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">331.57</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div class="first" style="width: 18.527523168942015px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">40.67</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Impact of top #3 count Indicator over Cause</h5>
+<span class="tag is-success is-large">Age-standardised rate</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Cause</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div class="first" style="width: 35.43786852778987px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1197</div>
+</td>
+</tr>
+
+<tr>
+<td>Number</td>
+<td>
+<div class="first" style="width: 35.43786852778987px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1197</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div class="first" style="width: 17.482537807332402px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div class="first" style="width: 17.482537807332402px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Indicator sum over Data_value</h5>
+<span class="tag is-success is-large">132885.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Number</td>
+<td>
+<div class="first" style="width: 69.24251792973068px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1033543.33</div>
+</td>
+</tr>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div class="first" style="width: 58.98619825439161px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">132885.04</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div class="first" style="width: 28.53626781066239px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">301.04</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div class="first" style="width: 18.046296136903376px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">36.94</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Indicator sum over Lower_CI</h5>
+<span class="tag is-success is-large">118613.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Number</td>
+<td>
+<div class="first" style="width: 68.99978480248697px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">984566.74</div>
+</td>
+</tr>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div class="first" style="width: 58.41810115353908px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118612.86</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div class="first" style="width: 28.00157994794736px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">270.51</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div class="first" style="width: 17.51377233911709px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33.21</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Indicator sum over Upper_CI</h5>
+<span class="tag is-success is-large">147157.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Number</td>
+<td>
+<div class="first" style="width: 69.47401075632212px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1082519.93</div>
+</td>
+</tr>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div class="first" style="width: 59.49628373624193px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">147157.21</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div class="first" style="width: 29.019261068908854px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">331.57</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div class="first" style="width: 18.527523168942015px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">40.67</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Cause sum over Data_value</h5>
+<span class="tag is-success is-large">469322.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Cause</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Falls</td>
+<td>
+<div class="first" style="width: 65.51164355386183px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">490082.35</div>
+</td>
+</tr>
+
+<tr>
+<td>All</td>
+<td>
+<div class="first" style="width: 65.29522698214741px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">469322.48</div>
+</td>
+</tr>
+
+<tr>
+<td>Motor vehicle traffic crashes</td>
+<td>
+<div class="first" style="width: 57.846199229743235px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">105793.02</div>
+</td>
+</tr>
+
+<tr>
+<td>Intentional self-harm</td>
+<td>
+<div class="first" style="width: 52.44065960483729px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">35887.05</div>
+</td>
+</tr>
+
+<tr>
+<td>Assault</td>
+<td>
+<div class="first" style="width: 52.17478729655031px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">34028.63</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Cause sum over Lower_CI</h5>
+<span class="tag is-success is-large">454784.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Cause</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Falls</td>
+<td>
+<div class="first" style="width: 65.20785852710422px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">461192.92</div>
+</td>
+</tr>
+
+<tr>
+<td>All</td>
+<td>
+<div class="first" style="width: 65.1378885966228px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">454783.94</div>
+</td>
+</tr>
+
+<tr>
+<td>Motor vehicle traffic crashes</td>
+<td>
+<div class="first" style="width: 57.46942126885446px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">98113.89</div>
+</td>
+</tr>
+
+<tr>
+<td>Intentional self-harm</td>
+<td>
+<div class="first" style="width: 51.90525514553735px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">32242.83</div>
+</td>
+</tr>
+
+<tr>
+<td>Assault</td>
+<td>
+<div class="first" style="width: 51.59605648284109px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">30309.34</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Cause sum over Upper_CI</h5>
+<span class="tag is-success is-large">483861.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Cause</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Falls</td>
+<td>
+<div class="first" style="width: 65.79802392079891px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">518971.78</div>
+</td>
+</tr>
+
+<tr>
+<td>All</td>
+<td>
+<div class="first" style="width: 65.44776496759458px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">483861.02</div>
+</td>
+</tr>
+
+<tr>
+<td>Motor vehicle traffic crashes</td>
+<td>
+<div class="first" style="width: 58.196563652349305px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">113472.15</div>
+</td>
+</tr>
+
+<tr>
+<td>Intentional self-harm</td>
+<td>
+<div class="first" style="width: 52.924237415949456px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">39531.28</div>
+</td>
+</tr>
+
+<tr>
+<td>Assault</td>
+<td>
+<div class="first" style="width: 52.69342742089555px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">37747.91</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Validation sum over Data_value</h5>
+<span class="tag is-success is-large">14947.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Validation</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Validated</td>
+<td>
+<div class="first" style="width: 69.78426652071062px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1151819.36</div>
+</td>
+</tr>
+
+<tr>
+<td>Provisional</td>
+<td>
+<div class="first" style="width: 48.061326187511px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">14946.99</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Validation sum over Lower_CI</h5>
+<span class="tag is-success is-large">13366.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Validation</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Validated</td>
+<td>
+<div class="first" style="width: 69.50898141005905px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1090117.76</div>
+</td>
+</tr>
+
+<tr>
+<td>Provisional</td>
+<td>
+<div class="first" style="width: 47.5021832832314px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">13365.56</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Validation sum over Upper_CI</h5>
+<span class="tag is-success is-large">16528.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Validation</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Validated</td>
+<td>
+<div class="first" style="width: 70.04518291215346px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1213520.97</div>
+</td>
+</tr>
+
+<tr>
+<td>Provisional</td>
+<td>
+<div class="first" style="width: 48.564182644290014px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">16528.42</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Population sum over Data_value</h5>
+<span class="tag is-success is-large">49074.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Population</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Whole pop</td>
+<td>
+<div class="first" style="width: 68.78761811314347px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">943662.28</div>
+</td>
+</tr>
+
+<tr>
+<td>Maori</td>
+<td>
+<div class="first" style="width: 60.33490547674674px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">174029.67</div>
+</td>
+</tr>
+
+<tr>
+<td>Children</td>
+<td>
+<div class="first" style="width: 54.005464348556735px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">49074.4</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Population sum over Lower_CI</h5>
+<span class="tag is-success is-large">42955.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Population</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Whole pop</td>
+<td>
+<div class="first" style="width: 68.5954665770602px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">908085.05</div>
+</td>
+</tr>
+
+<tr>
+<td>Maori</td>
+<td>
+<div class="first" style="width: 59.672732618003295px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">152443.07</div>
+</td>
+</tr>
+
+<tr>
+<td>Children</td>
+<td>
+<div class="first" style="width: 53.33956478800822px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">42955.2</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Population sum over Upper_CI</h5>
+<span class="tag is-success is-large">55194.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Population</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Whole pop</td>
+<td>
+<div class="first" style="width: 68.97265767903518px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">979239.51</div>
+</td>
+</tr>
+
+<tr>
+<td>Maori</td>
+<td>
+<div class="first" style="width: 60.919551078038694px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">195616.27</div>
+</td>
+</tr>
+
+<tr>
+<td>Children</td>
+<td>
+<div class="first" style="width: 54.59301223101573px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">55193.61</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Age sum over Data_value</h5>
+<span class="tag is-success is-large">49074.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Age</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>All ages</td>
+<td>
+<div class="first" style="width: 68.12752629601773px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">826954.75</div>
+</td>
+</tr>
+
+<tr>
+<td>75+ years</td>
+<td>
+<div class="first" style="width: 61.53892685371339px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">221413.08</div>
+</td>
+</tr>
+
+<tr>
+<td>0-74 years</td>
+<td>
+<div class="first" style="width: 55.73274070916429px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">69324.12</div>
+</td>
+</tr>
+
+<tr>
+<td>0-14 years</td>
+<td>
+<div class="first" style="width: 54.005464348556735px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">49074.4</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Age sum over Lower_CI</h5>
+<span class="tag is-success is-large">42955.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Age</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>All ages</td>
+<td>
+<div class="first" style="width: 67.90622683362434px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">791151.98</div>
+</td>
+</tr>
+
+<tr>
+<td>75+ years</td>
+<td>
+<div class="first" style="width: 61.14320328020103px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">204564.92</div>
+</td>
+</tr>
+
+<tr>
+<td>0-74 years</td>
+<td>
+<div class="first" style="width: 55.39617003135195px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">64811.22</div>
+</td>
+</tr>
+
+<tr>
+<td>0-14 years</td>
+<td>
+<div class="first" style="width: 53.33956478800822px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">42955.2</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Age sum over Upper_CI</h5>
+<span class="tag is-success is-large">55194.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Age</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>All ages</td>
+<td>
+<div class="first" style="width: 68.33944480179363px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">862757.52</div>
+</td>
+</tr>
+
+<tr>
+<td>75+ years</td>
+<td>
+<div class="first" style="width: 61.90561496150843px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">238261.24</div>
+</td>
+</tr>
+
+<tr>
+<td>0-74 years</td>
+<td>
+<div class="first" style="width: 56.048077268523585px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">73837.02</div>
+</td>
+</tr>
+
+<tr>
+<td>0-14 years</td>
+<td>
+<div class="first" style="width: 54.59301223101573px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">55193.61</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Severity sum over Data_value</h5>
+<span class="tag is-success is-large">99973.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Severity</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Serious</td>
+<td>
+<div class="first" style="width: 66.01918375916301px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">542442.17</div>
+</td>
+</tr>
+
+<tr>
+<td>Serious non-fatal</td>
+<td>
+<div class="first" style="width: 65.84958159499062px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">524350.86</div>
+</td>
+</tr>
+
+<tr>
+<td>Fatal</td>
+<td>
+<div class="first" style="width: 57.563293482391046px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">99973.33</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Severity sum over Lower_CI</h5>
+<span class="tag is-success is-large">90079.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Severity</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Serious</td>
+<td>
+<div class="first" style="width: 65.76276331427803px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">515324.8</div>
+</td>
+</tr>
+
+<tr>
+<td>Serious non-fatal</td>
+<td>
+<div class="first" style="width: 65.59257217107154px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">498079.23</div>
+</td>
+</tr>
+
+<tr>
+<td>Fatal</td>
+<td>
+<div class="first" style="width: 57.04222780199742px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">90079.29</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest Severity sum over Upper_CI</h5>
+<span class="tag is-success is-large">109867.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Severity</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Serious</td>
+<td>
+<div class="first" style="width: 66.26309293615274px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">569559.53</div>
+</td>
+</tr>
+
+<tr>
+<td>Serious non-fatal</td>
+<td>
+<div class="first" style="width: 66.09402360730115px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">550622.49</div>
+</td>
+</tr>
+
+<tr>
+<td>Fatal</td>
+<td>
+<div class="first" style="width: 58.03514565491194px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">109867.36</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="content has-text-centered">
+<p>
+<strong>Generated</strong> by <a href="http://cognito.readthedocs.io/"><img src="https://cognito.readthedocs.io/en/latest/_images/logo.png" width="60px" /></a>. The source code is licensed
+<a href="https://cognito.readthedocs.io/en/latest/license.html">BSD</a>.
+</p>
+</div>
+</div>
+</footer>
+</body>
+<script type="text/javascript" src="https://twitter.github.io/typeahead.js/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://underscorejs.org/underscore-min.js"></script>
+<script type="text/javascript" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+
+<script type="text/javascript">
+var stories_json = [{'question': 'Impact of top #3 count Series_reference over Severity'}, {'question': 'Highest Series_reference sum over Data_value'}, {'question': 'Highest Series_reference sum over Lower_CI'}, {'question': 'Highest Series_reference sum over Upper_CI'}, {'question': 'Impact of top #3 count Period over Age'}, {'question': 'Highest Period sum over Data_value'}, {'question': 'Highest Period sum over Lower_CI'}, {'question': 'Highest Period sum over Upper_CI'}, {'question': 'Impact of top #3 count Type over Population'}, {'question': 'Highest Type sum over Data_value'}, {'question': 'Highest Type sum over Lower_CI'}, {'question': 'Highest Type sum over Upper_CI'}, {'question': 'Impact of top #3 count Units over Validation'}, {'question': 'Highest Units sum over Data_value'}, {'question': 'Highest Units sum over Lower_CI'}, {'question': 'Highest Units sum over Upper_CI'}, {'question': 'Impact of top #3 count Indicator over Cause'}, {'question': 'Highest Indicator sum over Data_value'}, {'question': 'Highest Indicator sum over Lower_CI'}, {'question': 'Highest Indicator sum over Upper_CI'}, {'question': 'Highest Cause sum over Data_value'}, {'question': 'Highest Cause sum over Lower_CI'}, {'question': 'Highest Cause sum over Upper_CI'}, {'question': 'Highest Validation sum over Data_value'}, {'question': 'Highest Validation sum over Lower_CI'}, {'question': 'Highest Validation sum over Upper_CI'}, {'question': 'Highest Population sum over Data_value'}, {'question': 'Highest Population sum over Lower_CI'}, {'question': 'Highest Population sum over Upper_CI'}, {'question': 'Highest Age sum over Data_value'}, {'question': 'Highest Age sum over Lower_CI'}, {'question': 'Highest Age sum over Upper_CI'}, {'question': 'Highest Severity sum over Data_value'}, {'question': 'Highest Severity sum over Lower_CI'}, {'question': 'Highest Severity sum over Upper_CI'}];
+var substringMatcher = function(strs) {
+return function findMatches(q, cb) {
+var matches, substringRegex;
+// an array that will be populated with substring matches
+matches = [];
+// regex used to determine if a string contains the substring `q`
+substrRegex = new RegExp(q, 'i');
+// iterate through the pool of strings and for any string that
+// contains the substring `q`, add it to the `matches` array
+$.each(strs, function(i, str) {
+if (substrRegex.test(str)) {
+matches.push(str);
+}
+});
+cb(matches);
+};
+};
+var states = _.pluck(stories_json, 'question');
+var states = new Bloodhound({
+datumTokenizer: Bloodhound.tokenizers.whitespace,
+queryTokenizer: Bloodhound.tokenizers.whitespace,
+// `states` is an array of state names defined in "The Basics"
+local: states
+});
+$('#bloodhound .typeahead').typeahead({
+hint: true,
+highlight: true,
+minLength: 1
+},
+{
+name: 'states',
+source: states
+});
+$('.typeahead').keyup(function(){
+var txtvalue = this.value;
+txtvalue.length ? $('div .is-4').hide().filter(function(){
+return $(this).text().toLowerCase().indexOf(txtvalue) > 0;
+}).show() : $('div .is-4').show();
+});
+var final_transcript = '';
+var recognizing = false;
+if ('webkitSpeechRecognition' in window) {
+var recognition = new webkitSpeechRecognition();
+recognition.continuous = true;
+recognition.interimResults = true;
+recognition.onstart = function() {
+recognizing = true;
+};
+recognition.onerror = function(event) {
+console.log(event.error);
+};
+recognition.onend = function() {
+recognizing = false;
+};
+recognition.onresult = function(event) {
+var interim_transcript = '';
+for (var i = event.resultIndex; i < event.results.length; ++i) {
+if (event.results[i].isFinal) {
+final_transcript += event.results[i][0].transcript;
+} else {
+interim_transcript += event.results[i][0].transcript;
+}
+}
+final_transcript = capitalize(final_transcript);
+$('.typeahead').typeahead('val', interim_transcript);
+interim_transcript.length ? $('div .is-4').hide().filter(function(){
+return $(this).text().toLowerCase().indexOf(interim_transcript) > 0;
+}).show() : $('div .is-4').show();
+$('.typeahead').typeahead('val', final_transcript);
+$('.listen').hide();
+$('.microphone').show();
+};
+}
+var two_line = /\n\n/g;
+var one_line = /\n/g;
+function linebreak(s) {
+return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
+}
+function capitalize(s) {
+return s.replace(s.substr(0,1), function(m) { return m.toUpperCase(); });
+}
+function startDictation(event) {
+if (recognizing) {
+recognition.stop();
+return;
+}
+final_transcript = '';
+recognition.lang = 'en-US';
+recognition.start();
+$('.typeahead').typeahead('val', '');
+}
+</script>
+
+</html>
