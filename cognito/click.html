@@ -1,0 +1,918 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cognito Report | 27-April-2020-19:26:1587995809</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<!-- Bulma Version 0.8.x-->
+<link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css">
+</head>
+<body>
+<div id="app">
+<nav class="navbar has-shadow">
+<div class="container">
+<div class="navbar-brand">
+<a class="navbar-item" href="https://cognito.readthedocs.io/en/latest/">
+<img src="https://cognito.readthedocs.io/en/latest/_images/logo.png" alt="Cognito - Toolkit for Data Scientists">
+</a>
+<div class="navbar-burger burger" data-target="navMenu">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="navbar-end">
+<button class="button is-success is-small rounded" onclick="window.print()">
+Generate PDF
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="columns" style="margin-top: 30px;">
+<div class="column">
+
+<style type="text/css">
+.typeahead, .tt-query, .tt-hint {width: 396px; height: 30px; padding: 8px 12px; font-size: 24px; line-height: 30px; border: 2px solid #ccc; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; outline: none; } .typeahead {background-color: #fff; } .typeahead:focus {border: 2px solid #0097cf; } .tt-query {-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); } .tt-hint {color: #999 } .tt-menu {width: 600px; margin: 12px 0; padding: 8px 0; background-color: #fff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2); -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2); box-shadow: 0 5px 10px rgba(0,0,0,.2); } .tt-suggestion {padding: 3px 20px; font-size: 18px; line-height: 24px; } .tt-suggestion:hover {cursor: pointer; color: #fff; background-color: #0097cf; } .tt-suggestion.tt-cursor {color: #fff; background-color: #0097cf; } .tt-suggestion p {margin: 0; }
+.listen { display: none; }
+@media print {
+div.do-not-print {display: none;}
+}
+</style>
+<div class="card column is-half">
+<header class="card-header">
+<p class="card-header-title">
+Data Meta Summary
+</p>
+</header>
+<div class="card-content">
+<table class="table is-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Values</th>
+    </tr>
+    <tr>
+        <td>Total variables</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>Total Observations</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>Missing Cells</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>(%) Missing Cells</td>
+        <td>0.0</td>
+    </tr>
+    <tr>
+        <td>Duplicate Rows</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>(%) Duplicate Rows</td>
+        <td>0.0</td>
+    </tr>
+    <tr>
+        <td>Total Size of Memory</td>
+        <td>2.144KiB</td>
+    </tr>
+    <tr>
+        <td>🍋 Total Categorical</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>🔟 Total Continuous</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Started at</td>
+        <td>27-Apr-20 19:26:49</td>
+    </tr>
+    <tr>
+        <td>Ended at</td>
+        <td>27-Apr-20 19:26:49</td>
+    </tr>
+    <tr>
+        <td>Time Elapsed</td>
+        <td>0.177584</td>
+    </tr>
+</table>
+</div>
+</div>
+<div class="card">
+<header class="card-header">
+<p class="card-header-title">
+Descriptive Summary
+</p>
+</header>
+<div class="card-content">
+<table class="table is-bordered">
+    <tr>
+        <th>Features</th>
+        <th>Type</th>
+        <th>Value Type</th>
+        <th>Outliers</th>
+        <th>Missing</th>
+        <th>(%) Missing</th>
+        <th>Distinct Count</th>
+        <th>Min</th>
+        <th>Mean</th>
+        <th>Max</th>
+        <th>Zeros</th>
+        <th>(%) Zeros</th>
+        <th>Memory Size</th>
+    </tr>
+    <tr>
+        <td>Date</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>28</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>0.352KiB</td>
+    </tr>
+    <tr>
+        <td>Visitors</td>
+        <td>int64</td>
+        <td>discrete</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>12</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>1</td>
+        <td>0.1111111111111111</td>
+        <td>0.352KiB</td>
+    </tr>
+    <tr>
+        <td>Impressions</td>
+        <td>int64</td>
+        <td>discrete</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>6</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>5</td>
+        <td>0.5555555555555556</td>
+        <td>0.352KiB</td>
+    </tr>
+    <tr>
+        <td>Engaged Visitors</td>
+        <td>int64</td>
+        <td>discrete</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>6</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>6</td>
+        <td>0.6666666666666666</td>
+        <td>0.352KiB</td>
+    </tr>
+    <tr>
+        <td>Viewed &amp; Submitted Form</td>
+        <td>int64</td>
+        <td>discrete</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>4</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>25</td>
+        <td>2.7777777777777777</td>
+        <td>0.352KiB</td>
+    </tr>
+    <tr>
+        <td>Hovers</td>
+        <td>int64</td>
+        <td>discrete</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>3</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>22</td>
+        <td>2.4444444444444446</td>
+        <td>0.352KiB</td>
+    </tr>
+    <tr>
+        <td>Hovered &amp; Submitted Form</td>
+        <td>int64</td>
+        <td>discrete</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>2</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>27</td>
+        <td>3.0</td>
+        <td>0.352KiB</td>
+    </tr>
+    <tr>
+        <td>Clicks</td>
+        <td>int64</td>
+        <td>discrete</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>2</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>24</td>
+        <td>2.6666666666666665</td>
+        <td>0.352KiB</td>
+    </tr>
+    <tr>
+        <td>Clicked &amp; Submitted Form</td>
+        <td>int64</td>
+        <td>discrete</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>1</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>28</td>
+        <td>3.111111111111111</td>
+        <td>0.352KiB</td>
+    </tr>
+</table>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card column is-half is-offset-one-quarter do-not-print" style="margin-top: 20px;">
+<h3>Analytical Search Engine</h3>
+<div id="bloodhound">
+<input class="typeahead" type="text" placeholder="Ask your question" style="width: 608px;height: 50px;">
+<img style="position: absolute;" onclick="startDictation()" src="https://i.imgur.com/cHidSVu.gif" class="microphone" />
+<img style="position: absolute;width: 25px;left: 670px;top: 45px;" onclick="story()" src="https://cdn.clipart.email/4b6286d7c0ed6dca7172858b098e2b6b_speaker-icon-vector-art-image-free-stock-photo-public-domain-_2081-2400.png" />
+</div>
+</div>
+<div class="columns is-multiline is-mobile" style="margin-top: 20px;">
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5><span class='tag is-primary is-light'>Date</span>                with sum of <span class='tag is-success is-light'>Visitors</span></h5>
+<span class="tag is-success is-large">14</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Date</th>
+
+<th>Visitors</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2019-12-02T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Visitors : 14" class="first" style="width: 70px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">14</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-18T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Visitors : 13" class="first" style="width: 65px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">13</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-16T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Visitors : 10" class="first" style="width: 50px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">10</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-22T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Visitors : 8" class="first" style="width: 40px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-07T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Visitors : 8" class="first" style="width: 40px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5><span class='tag is-primary is-light'>Date</span>                with sum of <span class='tag is-success is-light'>Engaged Visitors</span></h5>
+<span class="tag is-success is-large">6</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Date</th>
+
+<th>Engaged Visitors</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2019-11-18T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Engaged Visitors : 6" class="first" style="width: 30px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">6</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-07T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Engaged Visitors : 4" class="first" style="width: 20px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">4</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-27T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Engaged Visitors : 3" class="first" style="width: 15px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">3</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-10T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Engaged Visitors : 3" class="first" style="width: 15px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">3</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-06T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Engaged Visitors : 3" class="first" style="width: 15px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">3</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5><span class='tag is-primary is-light'>Date</span>                with sum of <span class='tag is-success is-light'>Impressions</span></h5>
+<span class="tag is-success is-large">6</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Date</th>
+
+<th>Impressions</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2019-11-18T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Impressions : 6" class="first" style="width: 30px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">6</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-07T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Impressions : 4" class="first" style="width: 20px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">4</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-01T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Impressions : 4" class="first" style="width: 20px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">4</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-15T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Impressions : 4" class="first" style="width: 20px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">4</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-27T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Impressions : 3" class="first" style="width: 15px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">3</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5><span class='tag is-primary is-light'>Date</span>                with sum of <span class='tag is-success is-light'>Hovers</span></h5>
+<span class="tag is-success is-large">2</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Date</th>
+
+<th>Hovers</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2019-11-16T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Hovers : 2" class="first" style="width: 10px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">2</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-01T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Hovers : 1" class="first" style="width: 5px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-12T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Hovers : 1" class="first" style="width: 5px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-08T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Hovers : 1" class="first" style="width: 5px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-27T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Hovers : 1" class="first" style="width: 5px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5><span class='tag is-primary is-light'>Date</span>                with sum of <span class='tag is-success is-light'>Clicks</span></h5>
+<span class="tag is-success is-large">1</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Date</th>
+
+<th>Clicks</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2019-12-12T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Clicks : 1" class="first" style="width: 5px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-04T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Clicks : 1" class="first" style="width: 5px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-27T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Clicks : 1" class="first" style="width: 5px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-02T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Clicks : 1" class="first" style="width: 5px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-14T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Clicks : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5><span class='tag is-primary is-light'>Date</span>                with sum of <span class='tag is-success is-light'>Viewed & Submitted Form </span></h5>
+<span class="tag is-success is-large">4</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Date</th>
+
+<th>Viewed &amp; Submitted Form </th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2019-11-15T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Viewed &amp; Submitted Form  : 4" class="first" style="width: 20px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">4</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-01T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Viewed &amp; Submitted Form  : 2" class="first" style="width: 10px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">2</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-03T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Viewed &amp; Submitted Form  : 1" class="first" style="width: 5px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-14T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Viewed &amp; Submitted Form  : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-12T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Viewed &amp; Submitted Form  : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5><span class='tag is-primary is-light'>Date</span>                with sum of <span class='tag is-success is-light'>Hovered & Submitted Form </span></h5>
+<span class="tag is-success is-large">1</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Date</th>
+
+<th>Hovered &amp; Submitted Form </th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2019-12-01T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Hovered &amp; Submitted Form  : 1" class="first" style="width: 5px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-14T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Hovered &amp; Submitted Form  : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-15T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Hovered &amp; Submitted Form  : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-12T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Hovered &amp; Submitted Form  : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-11T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Hovered &amp; Submitted Form  : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5><span class='tag is-primary is-light'>Date</span>                with sum of <span class='tag is-success is-light'>Clicked & Submitted Form </span></h5>
+<span class="tag is-success is-large">0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Date</th>
+
+<th>Clicked &amp; Submitted Form </th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2019-11-14T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Clicked &amp; Submitted Form  : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-11-15T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Clicked &amp; Submitted Form  : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-12T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Clicked &amp; Submitted Form  : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-11T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Clicked &amp; Submitted Form  : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>2019-12-10T00:00:00.000Z</td>
+<td>
+<div data-tooltip="Clicked &amp; Submitted Form  : 0" class="first" style="width: 0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="content has-text-centered">
+<p>
+<strong>Generated</strong> by <a href="http://cognito.readthedocs.io/"><img src="https://cognito.readthedocs.io/en/latest/_images/logo.png" width="60px" /></a>. The source code is licensed
+<a href="https://cognito.readthedocs.io/en/latest/license.html">BSD</a>.
+</p>
+</div>
+</div>
+</footer>
+</div>
+</body>
+<script type="text/javascript" src="https://twitter.github.io/typeahead.js/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://underscorejs.org/underscore-min.js"></script>
+<script type="text/javascript" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+
+<script type="text/javascript">
+var stories_json = [{'question': 'Date with sum of Visitors', 'answer': 14}, {'question': 'Date with sum of Engaged Visitors', 'answer': 6}, {'question': 'Date with sum of Impressions', 'answer': 6}, {'question': 'Date with sum of Hovers', 'answer': 2}, {'question': 'Date with sum of Clicks', 'answer': 1}, {'question': 'Date with sum of Viewed & Submitted Form ', 'answer': 4}, {'question': 'Date with sum of Hovered & Submitted Form ', 'answer': 1}, {'question': 'Date with sum of Clicked & Submitted Form ', 'answer': 0}];
+var substringMatcher = function(strs) {
+return function findMatches(q, cb) {
+var matches, substringRegex;
+// an array that will be populated with substring matches
+matches = [];
+// regex used to determine if a string contains the substring `q`
+substrRegex = new RegExp(q, 'i');
+// iterate through the pool of strings and for any string that
+// contains the substring `q`, add it to the `matches` array
+$.each(strs, function(i, str) {
+if (substrRegex.test(str)) {
+matches.push(str);
+}
+});
+cb(matches);
+};
+};
+var states = _.pluck(stories_json, 'question');
+var states = new Bloodhound({
+datumTokenizer: Bloodhound.tokenizers.whitespace,
+queryTokenizer: Bloodhound.tokenizers.whitespace,
+// `states` is an array of state names defined in "The Basics"
+local: states
+});
+$('#bloodhound .typeahead').typeahead({
+hint: true,
+highlight: true,
+minLength: 1
+},
+{
+name: 'states',
+source: states
+});
+$('.typeahead').keyup(function(){
+var txtvalue = this.value;
+txtvalue.length ? $('div .is-4').hide().filter(function(){
+return $(this).text().toLowerCase().indexOf(txtvalue) > 0;
+}).show() : $('div .is-4').show();
+});
+function speak(text) {
+if ('speechSynthesis' in window) {
+var timer = setInterval(function() {
+var voices = speechSynthesis.getVoices();
+if (voices.length !== 0) {
+msg = new SpeechSynthesisUtterance();
+msg.voice = window.speechSynthesis.getVoices()[54];
+msg.text = text.replace('_', ' ');
+speechSynthesis.speak(msg);
+}
+}, 200);
+}
+}
+var final_transcript = '';
+var recognizing = false;
+if ('webkitSpeechRecognition' in window) {
+var recognition = new webkitSpeechRecognition();
+recognition.continuous = true;
+recognition.interimResults = true;
+recognition.onstart = function() {
+recognizing = true;
+};
+recognition.onerror = function(event) {
+console.log(event.error);
+};
+recognition.onend = function() {
+recognizing = false;
+};
+recognition.onresult = function(event) {
+var interim_transcript = '';
+for (var i = event.resultIndex; i < event.results.length; ++i) {
+if (event.results[i].isFinal) {
+final_transcript += event.results[i][0].transcript;
+} else {
+interim_transcript += event.results[i][0].transcript;
+}
+}
+final_transcript = capitalize(final_transcript);
+$('.typeahead').typeahead('val', interim_transcript);
+interim_transcript.length ? $('div .is-4').hide().filter(function(){
+return $(this).text().toLowerCase().indexOf(interim_transcript) > 0;
+}).show() : $('div .is-4').show();
+$('.typeahead').typeahead('val', final_transcript);
+// speak(final_transcript);
+$('.listen').hide();
+$('.microphone').show();
+};
+}
+var two_line = /\n\n/g;
+var one_line = /\n/g;
+function linebreak(s) {
+return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
+}
+function capitalize(s) {
+return s.replace(s.substr(0,1), function(m) { return m.toUpperCase(); });
+}
+function startDictation(event) {
+if (recognizing) {
+recognition.stop();
+return;
+}
+final_transcript = '';
+recognition.lang = 'en-US';
+recognition.start();
+$('.typeahead').typeahead('val', '');
+}
+function story() {
+// stories = _.pluck(stories_json, 'question');
+stories_json.forEach(function(d) {
+text = d.question + ' is ' + String(d.answer);
+speak(text);
+});
+}
+</script>
+
+</html>
