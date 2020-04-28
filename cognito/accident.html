@@ -1,0 +1,4267 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cognito Report | 28-April-2020-11:26:1588053378</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<!-- Bulma Version 0.8.x-->
+<link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css">
+</head>
+<body>
+<div id="app">
+<nav class="navbar has-shadow">
+<div class="container">
+<div class="navbar-brand">
+<a class="navbar-item" href="https://cognito.readthedocs.io/en/latest/">
+<img src="https://cognito.readthedocs.io/en/latest/_images/logo.png" alt="Cognito - Toolkit for Data Scientists">
+</a>
+<div class="navbar-burger burger" data-target="navMenu">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="navbar-end">
+<button class="button is-success is-small rounded" onclick="window.print()">
+Generate PDF
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="columns" style="margin-top: 30px;">
+<div class="column">
+
+<style type="text/css">
+.typeahead, .tt-query, .tt-hint {width: 396px; height: 30px; padding: 8px 12px; font-size: 24px; line-height: 30px; border: 2px solid #ccc; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; outline: none; } .typeahead {background-color: #fff; } .typeahead:focus {border: 2px solid #0097cf; } .tt-query {-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); } .tt-hint {color: #999 } .tt-menu {width: 600px; margin: 12px 0; padding: 8px 0; background-color: #fff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2); -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2); box-shadow: 0 5px 10px rgba(0,0,0,.2); } .tt-suggestion {padding: 3px 20px; font-size: 18px; line-height: 24px; } .tt-suggestion:hover {cursor: pointer; color: #fff; background-color: #0097cf; } .tt-suggestion.tt-cursor {color: #fff; background-color: #0097cf; } .tt-suggestion p {margin: 0; }
+.listen { display: none; }
+@media print {
+div.do-not-print {display: none;}
+}
+</style>
+<div class="card column is-half">
+<header class="card-header">
+<p class="card-header-title">
+Data Meta Summary
+</p>
+</header>
+<div class="card-content">
+<table class="table is-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Values</th>
+    </tr>
+    <tr>
+        <td>Total variables</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>Total Observations</td>
+        <td>2460</td>
+    </tr>
+    <tr>
+        <td>Missing Cells</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>(%) Missing Cells</td>
+        <td>0.0</td>
+    </tr>
+    <tr>
+        <td>Duplicate Rows</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>(%) Duplicate Rows</td>
+        <td>0.0</td>
+    </tr>
+    <tr>
+        <td>Total Size of Memory</td>
+        <td>255.968KiB</td>
+    </tr>
+    <tr>
+        <td>🍋 Total Categorical</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>🔟 Total Continuous</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Started at</td>
+        <td>28-Apr-20 11:26:17</td>
+    </tr>
+    <tr>
+        <td>Ended at</td>
+        <td>28-Apr-20 11:26:18</td>
+    </tr>
+    <tr>
+        <td>Time Elapsed</td>
+        <td>0.662668</td>
+    </tr>
+</table>
+</div>
+</div>
+<div class="card">
+<header class="card-header">
+<p class="card-header-title">
+Descriptive Summary
+</p>
+</header>
+<div class="card-content">
+<table class="table is-bordered">
+    <tr>
+        <th>Features</th>
+        <th>Type</th>
+        <th>Value Type</th>
+        <th>Outliers</th>
+        <th>Missing</th>
+        <th>(%) Missing</th>
+        <th>Distinct Count</th>
+        <th>Min</th>
+        <th>Mean</th>
+        <th>Max</th>
+        <th>Zeros</th>
+        <th>(%) Zeros</th>
+        <th>Memory Size</th>
+    </tr>
+    <tr>
+        <td>Upper_CI</td>
+        <td>float64</td>
+        <td>numerical</td>
+        <td>🚩</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>2031</td>
+        <td>0.801475429</td>
+        <td>500.02</td>
+        <td>12689.8763</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Lower_CI</td>
+        <td>float64</td>
+        <td>numerical</td>
+        <td>🚩</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>2031</td>
+        <td>0.191650658</td>
+        <td>448.57</td>
+        <td>12252.1237</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Data_value</td>
+        <td>float64</td>
+        <td>numerical</td>
+        <td>🚩</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>1991</td>
+        <td>0.713550407</td>
+        <td>474.3</td>
+        <td>12471.0</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Series_reference</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>144</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Period</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>36</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Cause</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>10</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Units</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>5</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Indicator</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>4</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>4</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Severity</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>3</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Population</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>3</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Validation</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>2</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+    <tr>
+        <td>Type</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>2</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>19.808KiB</td>
+    </tr>
+</table>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card column is-half is-offset-one-quarter do-not-print" style="margin-top: 20px;">
+<h3>Analytical Search Engine</h3>
+<div id="bloodhound">
+<input class="typeahead" type="text" placeholder="Ask your question" style="width: 608px;height: 50px;">
+<img style="position: absolute;" onclick="startDictation()" src="https://i.imgur.com/cHidSVu.gif" class="microphone" />
+<img style="position: absolute;width: 25px;left: 670px;top: 45px;" onclick="story()" src="https://cdn.clipart.email/4b6286d7c0ed6dca7172858b098e2b6b_speaker-icon-vector-art-image-free-stock-photo-public-domain-_2081-2400.png" />
+</div>
+</div>
+<div class="columns is-multiline is-mobile" style="margin-top: 20px;">
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Severity</span>                 was 19 of  <span class='tag is-success is-light'>Series_reference W_F02B</span>.</h5>
+<span class="tag is-success is-large">W_F02B</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Severity</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_F02B</td>
+<td>
+<div data-tooltip="Severity : 19" class="first" style="width: 0.0019px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>f01c</td>
+<td>
+<div data-tooltip="Severity : 19" class="first" style="width: 0.0019px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>M_F01B</td>
+<td>
+<div data-tooltip="Severity : 19" class="first" style="width: 0.0019px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>M_F02A</td>
+<td>
+<div data-tooltip="Severity : 19" class="first" style="width: 0.0019px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>M_F02B</td>
+<td>
+<div data-tooltip="Severity : 19" class="first" style="width: 0.0019px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Severity</span>                 was 10 of  <span class='tag is-success is-light'>Series_reference W_S13</span></h5>
+<span class="tag is-success is-large">W_S13</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Severity</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_F02B</td>
+<td>
+<div data-tooltip="Severity : 19" class="first" style="width: 0.0019px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>f01c</td>
+<td>
+<div data-tooltip="Severity : 19" class="first" style="width: 0.0019px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>M_F01B</td>
+<td>
+<div data-tooltip="Severity : 19" class="first" style="width: 0.0019px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>M_F02A</td>
+<td>
+<div data-tooltip="Severity : 19" class="first" style="width: 0.0019px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+<tr>
+<td>M_F02B</td>
+<td>
+<div data-tooltip="Severity : 19" class="first" style="width: 0.0019px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">19</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Data_value</span>                is 172349.0 for <span class='tag is-success is-light'>Series_reference W_I21</span></h5>
+<span class="tag is-success is-large">172349.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_I21</td>
+<td>
+<div data-tooltip="Data_value : 172349.0" class="first" style="width: 17.2349px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">172349.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_I01</td>
+<td>
+<div data-tooltip="Data_value : 165194.0" class="first" style="width: 16.5194px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">165194.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01A</td>
+<td>
+<div data-tooltip="Data_value : 89397.0" class="first" style="width: 8.9397px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">89397.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F21A</td>
+<td>
+<div data-tooltip="Data_value : 83653.0" class="first" style="width: 8.3653px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">83653.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01C</td>
+<td>
+<div data-tooltip="Data_value : 59941.0" class="first" style="width: 5.9941px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">59941.0</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Data_value</span>                is 18.078982030000002 for <span class='tag is-success is-light'>Series_reference W_M14</span></h5>
+<span class="tag is-success is-large">18.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_I21</td>
+<td>
+<div data-tooltip="Data_value : 172349.0" class="first" style="width: 17.2349px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">172349.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_I01</td>
+<td>
+<div data-tooltip="Data_value : 165194.0" class="first" style="width: 16.5194px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">165194.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01A</td>
+<td>
+<div data-tooltip="Data_value : 89397.0" class="first" style="width: 8.9397px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">89397.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F21A</td>
+<td>
+<div data-tooltip="Data_value : 83653.0" class="first" style="width: 8.3653px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">83653.0</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01C</td>
+<td>
+<div data-tooltip="Data_value : 59941.0" class="first" style="width: 5.9941px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">59941.0</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Lower_CI</span>                is 168997.78918800002 for <span class='tag is-success is-light'>Series_reference W_I21</span></h5>
+<span class="tag is-success is-large">168998.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_I21</td>
+<td>
+<div data-tooltip="Lower_CI : 168997.79" class="first" style="width: 16.899778918800003px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">168997.79</div>
+</td>
+</tr>
+
+<tr>
+<td>W_I01</td>
+<td>
+<div data-tooltip="Lower_CI : 161730.7" class="first" style="width: 16.1730703279px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">161730.7</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01A</td>
+<td>
+<div data-tooltip="Lower_CI : 86853.43" class="first" style="width: 8.685343403400001px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">86853.43</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F21A</td>
+<td>
+<div data-tooltip="Lower_CI : 81322.42" class="first" style="width: 8.132242187px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">81322.42</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01C</td>
+<td>
+<div data-tooltip="Lower_CI : 57857.25" class="first" style="width: 5.785725179799999px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">57857.25</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Lower_CI</span>                is 16.255559641 for <span class='tag is-success is-light'>Series_reference W_M14</span></h5>
+<span class="tag is-success is-large">16.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_I21</td>
+<td>
+<div data-tooltip="Lower_CI : 168997.79" class="first" style="width: 16.899778918800003px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">168997.79</div>
+</td>
+</tr>
+
+<tr>
+<td>W_I01</td>
+<td>
+<div data-tooltip="Lower_CI : 161730.7" class="first" style="width: 16.1730703279px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">161730.7</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01A</td>
+<td>
+<div data-tooltip="Lower_CI : 86853.43" class="first" style="width: 8.685343403400001px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">86853.43</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F21A</td>
+<td>
+<div data-tooltip="Lower_CI : 81322.42" class="first" style="width: 8.132242187px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">81322.42</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01C</td>
+<td>
+<div data-tooltip="Lower_CI : 57857.25" class="first" style="width: 5.785725179799999px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">57857.25</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Upper_CI</span>                is 175700.210816 for <span class='tag is-success is-light'>Series_reference W_I21</span></h5>
+<span class="tag is-success is-large">175700.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_I21</td>
+<td>
+<div data-tooltip="Upper_CI : 175700.21" class="first" style="width: 17.5700210816px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">175700.21</div>
+</td>
+</tr>
+
+<tr>
+<td>W_I01</td>
+<td>
+<div data-tooltip="Upper_CI : 168657.3" class="first" style="width: 16.8657296718px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">168657.3</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01A</td>
+<td>
+<div data-tooltip="Upper_CI : 91940.57" class="first" style="width: 9.1940565966px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">91940.57</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F21A</td>
+<td>
+<div data-tooltip="Upper_CI : 85983.58" class="first" style="width: 8.598357813px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">85983.58</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01C</td>
+<td>
+<div data-tooltip="Upper_CI : 62024.75" class="first" style="width: 6.202474820200001px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">62024.75</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Upper_CI</span>                is 19.902404417 for <span class='tag is-success is-light'>Series_reference W_M14</span></h5>
+<span class="tag is-success is-large">20.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Series_reference</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>W_I21</td>
+<td>
+<div data-tooltip="Upper_CI : 175700.21" class="first" style="width: 17.5700210816px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">175700.21</div>
+</td>
+</tr>
+
+<tr>
+<td>W_I01</td>
+<td>
+<div data-tooltip="Upper_CI : 168657.3" class="first" style="width: 16.8657296718px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">168657.3</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01A</td>
+<td>
+<div data-tooltip="Upper_CI : 91940.57" class="first" style="width: 9.1940565966px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">91940.57</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F21A</td>
+<td>
+<div data-tooltip="Upper_CI : 85983.58" class="first" style="width: 8.598357813px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">85983.58</div>
+</td>
+</tr>
+
+<tr>
+<td>W_F01C</td>
+<td>
+<div data-tooltip="Upper_CI : 62024.75" class="first" style="width: 6.202474820200001px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">62024.75</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Age</span>                 was 118 of  <span class='tag is-success is-light'>Period 2009</span>.</h5>
+<span class="tag is-success is-large">2009</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Age</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2009</td>
+<td>
+<div data-tooltip="Age : 118" class="first" style="width: 0.0118px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2016</td>
+<td>
+<div data-tooltip="Age : 118" class="first" style="width: 0.0118px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div data-tooltip="Age : 118" class="first" style="width: 0.0118px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div data-tooltip="Age : 118" class="first" style="width: 0.0118px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div data-tooltip="Age : 118" class="first" style="width: 0.0118px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Age</span>                 was 8 of  <span class='tag is-success is-light'>Period 2016-18</span></h5>
+<span class="tag is-success is-large">2016-18</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Age</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2009</td>
+<td>
+<div data-tooltip="Age : 118" class="first" style="width: 0.0118px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2016</td>
+<td>
+<div data-tooltip="Age : 118" class="first" style="width: 0.0118px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div data-tooltip="Age : 118" class="first" style="width: 0.0118px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div data-tooltip="Age : 118" class="first" style="width: 0.0118px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div data-tooltip="Age : 118" class="first" style="width: 0.0118px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Data_value</span>                is 76635.79149213499 for <span class='tag is-success is-light'>Period 2016</span></h5>
+<span class="tag is-success is-large">76636.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2016</td>
+<td>
+<div data-tooltip="Data_value : 76635.79" class="first" style="width: 7.663579149213499px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">76635.79</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div data-tooltip="Data_value : 70960.24" class="first" style="width: 7.096023903677px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">70960.24</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div data-tooltip="Data_value : 68875.04" class="first" style="width: 6.887503743996301px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">68875.04</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div data-tooltip="Data_value : 67130.0" class="first" style="width: 6.712999984210301px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">67130.0</div>
+</td>
+</tr>
+
+<tr>
+<td>2012</td>
+<td>
+<div data-tooltip="Data_value : 65609.41" class="first" style="width: 6.560941233252401px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">65609.41</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Data_value</span>                is 1037.1950892529999 for <span class='tag is-success is-light'>Period 2015-17</span></h5>
+<span class="tag is-success is-large">1037.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2016</td>
+<td>
+<div data-tooltip="Data_value : 76635.79" class="first" style="width: 7.663579149213499px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">76635.79</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div data-tooltip="Data_value : 70960.24" class="first" style="width: 7.096023903677px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">70960.24</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div data-tooltip="Data_value : 68875.04" class="first" style="width: 6.887503743996301px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">68875.04</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div data-tooltip="Data_value : 67130.0" class="first" style="width: 6.712999984210301px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">67130.0</div>
+</td>
+</tr>
+
+<tr>
+<td>2012</td>
+<td>
+<div data-tooltip="Data_value : 65609.41" class="first" style="width: 6.560941233252401px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">65609.41</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Lower_CI</span>                is 73172.74109503205 for <span class='tag is-success is-light'>Period 2016</span></h5>
+<span class="tag is-success is-large">73173.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2016</td>
+<td>
+<div data-tooltip="Lower_CI : 73172.74" class="first" style="width: 7.317274109503205px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">73172.74</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div data-tooltip="Lower_CI : 67647.72" class="first" style="width: 6.7647724455285px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">67647.72</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div data-tooltip="Lower_CI : 65571.29" class="first" style="width: 6.557129291877502px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">65571.29</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div data-tooltip="Lower_CI : 63822.91" class="first" style="width: 6.382291263406px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">63822.91</div>
+</td>
+</tr>
+
+<tr>
+<td>2012</td>
+<td>
+<div data-tooltip="Lower_CI : 62320.29" class="first" style="width: 6.232029209722301px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">62320.29</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Lower_CI</span>                is 913.8700583710001 for <span class='tag is-success is-light'>Period 2015-17</span></h5>
+<span class="tag is-success is-large">914.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2016</td>
+<td>
+<div data-tooltip="Lower_CI : 73172.74" class="first" style="width: 7.317274109503205px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">73172.74</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div data-tooltip="Lower_CI : 67647.72" class="first" style="width: 6.7647724455285px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">67647.72</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div data-tooltip="Lower_CI : 65571.29" class="first" style="width: 6.557129291877502px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">65571.29</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div data-tooltip="Lower_CI : 63822.91" class="first" style="width: 6.382291263406px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">63822.91</div>
+</td>
+</tr>
+
+<tr>
+<td>2012</td>
+<td>
+<div data-tooltip="Lower_CI : 62320.29" class="first" style="width: 6.232029209722301px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">62320.29</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Upper_CI</span>                is 80098.84189000596 for <span class='tag is-success is-light'>Period 2016</span></h5>
+<span class="tag is-success is-large">80099.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2016</td>
+<td>
+<div data-tooltip="Upper_CI : 80098.84" class="first" style="width: 8.009884189000596px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">80098.84</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div data-tooltip="Upper_CI : 74272.75" class="first" style="width: 7.427275361352003px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">74272.75</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div data-tooltip="Upper_CI : 72178.78" class="first" style="width: 7.217878196227299px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">72178.78</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div data-tooltip="Upper_CI : 70437.09" class="first" style="width: 7.043708705090704px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">70437.09</div>
+</td>
+</tr>
+
+<tr>
+<td>2012</td>
+<td>
+<div data-tooltip="Upper_CI : 68898.53" class="first" style="width: 6.889853256693602px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">68898.53</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Upper_CI</span>                is 1160.5201200440001 for <span class='tag is-success is-light'>Period 2015-17</span></h5>
+<span class="tag is-success is-large">1161.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Period</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>2016</td>
+<td>
+<div data-tooltip="Upper_CI : 80098.84" class="first" style="width: 8.009884189000596px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">80098.84</div>
+</td>
+</tr>
+
+<tr>
+<td>2015</td>
+<td>
+<div data-tooltip="Upper_CI : 74272.75" class="first" style="width: 7.427275361352003px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">74272.75</div>
+</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>
+<div data-tooltip="Upper_CI : 72178.78" class="first" style="width: 7.217878196227299px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">72178.78</div>
+</td>
+</tr>
+
+<tr>
+<td>2013</td>
+<td>
+<div data-tooltip="Upper_CI : 70437.09" class="first" style="width: 7.043708705090704px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">70437.09</div>
+</td>
+</tr>
+
+<tr>
+<td>2012</td>
+<td>
+<div data-tooltip="Upper_CI : 68898.53" class="first" style="width: 6.889853256693602px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">68898.53</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Population</span>                 was 2062 of  <span class='tag is-success is-light'>Type Single year</span>.</h5>
+<span class="tag is-success is-large">Single year</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Population</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div data-tooltip="Population : 2062" class="first" style="width: 0.2062px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">2062</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div data-tooltip="Population : 398" class="first" style="width: 0.0398px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">398</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Population</span>                 was 398 of  <span class='tag is-success is-light'>Type Moving average</span></h5>
+<span class="tag is-success is-large">Moving average</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Population</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div data-tooltip="Population : 2062" class="first" style="width: 0.2062px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">2062</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div data-tooltip="Population : 398" class="first" style="width: 0.0398px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">398</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Data_value</span>                is 1131578.6601755696 for <span class='tag is-success is-light'>Type Single year</span></h5>
+<span class="tag is-success is-large">1131579.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div data-tooltip="Data_value : 1131578.66" class="first" style="width: 113.15786601755696px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1131578.66</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div data-tooltip="Data_value : 35187.69" class="first" style="width: 3.5187692096171013px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">35187.69</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Data_value</span>                is 35187.69209617101 for <span class='tag is-success is-light'>Type Moving average</span></h5>
+<span class="tag is-success is-large">35188.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div data-tooltip="Data_value : 1131578.66" class="first" style="width: 113.15786601755696px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1131578.66</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div data-tooltip="Data_value : 35187.69" class="first" style="width: 3.5187692096171013px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">35187.69</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Lower_CI</span>                is 1073439.2560671293 for <span class='tag is-success is-light'>Type Single year</span></h5>
+<span class="tag is-success is-large">1073439.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div data-tooltip="Lower_CI : 1073439.26" class="first" style="width: 107.34392560671293px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1073439.26</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div data-tooltip="Lower_CI : 30044.06" class="first" style="width: 3.004406231932401px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">30044.06</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Lower_CI</span>                is 30044.062319324014 for <span class='tag is-success is-light'>Type Moving average</span></h5>
+<span class="tag is-success is-large">30044.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div data-tooltip="Lower_CI : 1073439.26" class="first" style="width: 107.34392560671293px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1073439.26</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div data-tooltip="Lower_CI : 30044.06" class="first" style="width: 3.004406231932401px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">30044.06</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Upper_CI</span>                is 1189718.064287086 for <span class='tag is-success is-light'>Type Single year</span></h5>
+<span class="tag is-success is-large">1189718.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div data-tooltip="Upper_CI : 1189718.06" class="first" style="width: 118.9718064287086px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1189718.06</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div data-tooltip="Upper_CI : 40331.32" class="first" style="width: 4.0331321872623045px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">40331.32</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Upper_CI</span>                is 40331.32187262305 for <span class='tag is-success is-light'>Type Moving average</span></h5>
+<span class="tag is-success is-large">40331.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Type</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Single year</td>
+<td>
+<div data-tooltip="Upper_CI : 1189718.06" class="first" style="width: 118.9718064287086px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1189718.06</div>
+</td>
+</tr>
+
+<tr>
+<td>Moving average</td>
+<td>
+<div data-tooltip="Upper_CI : 40331.32" class="first" style="width: 4.0331321872623045px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">40331.32</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Validation</span>                 was 1197 of  <span class='tag is-success is-light'>Units Injuries</span>.</h5>
+<span class="tag is-success is-large">Injuries</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Validation</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div data-tooltip="Validation : 1197" class="first" style="width: 0.1197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1197</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div data-tooltip="Validation : 1133" class="first" style="width: 0.1133px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1133</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div data-tooltip="Validation : 64" class="first" style="width: 0.0064px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">64</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div data-tooltip="Validation : 33" class="first" style="width: 0.0033px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Validation : 33" class="first" style="width: 0.0033px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Validation</span>                 was 33 of  <span class='tag is-success is-light'>Units Per thousand registered vehicles</span></h5>
+<span class="tag is-success is-large">Per thousand registered vehicles</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Validation</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div data-tooltip="Validation : 1197" class="first" style="width: 0.1197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1197</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div data-tooltip="Validation : 1133" class="first" style="width: 0.1133px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1133</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div data-tooltip="Validation : 64" class="first" style="width: 0.0064px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">64</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div data-tooltip="Validation : 33" class="first" style="width: 0.0033px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Validation : 33" class="first" style="width: 0.0033px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Data_value</span>                is 1033543.33333332 for <span class='tag is-success is-light'>Units Injuries</span></h5>
+<span class="tag is-success is-large">1033543.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div data-tooltip="Data_value : 1033543.33" class="first" style="width: 103.354333333332px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1033543.33</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div data-tooltip="Data_value : 131716.67" class="first" style="width: 13.171666695098285px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">131716.67</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div data-tooltip="Data_value : 1168.37" class="first" style="width: 0.11683701723179993px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1168.37</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div data-tooltip="Data_value : 301.04" class="first" style="width: 0.030104313560300005px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">301.04</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Data_value : 36.94" class="first" style="width: 0.0036938679515000003px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">36.94</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Data_value</span>                is 36.938679515000004 for <span class='tag is-success is-light'>Units Per thousand registered vehicles</span></h5>
+<span class="tag is-success is-large">37.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div data-tooltip="Data_value : 1033543.33" class="first" style="width: 103.354333333332px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1033543.33</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div data-tooltip="Data_value : 131716.67" class="first" style="width: 13.171666695098285px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">131716.67</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div data-tooltip="Data_value : 1168.37" class="first" style="width: 0.11683701723179993px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1168.37</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div data-tooltip="Data_value : 301.04" class="first" style="width: 0.030104313560300005px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">301.04</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Data_value : 36.94" class="first" style="width: 0.0036938679515000003px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">36.94</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Lower_CI</span>                is 984566.7350545584 for <span class='tag is-success is-light'>Units Injuries</span></h5>
+<span class="tag is-success is-large">984567.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div data-tooltip="Lower_CI : 984566.74" class="first" style="width: 98.45667350545584px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">984566.74</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div data-tooltip="Lower_CI : 117579.58" class="first" style="width: 11.757957650929999px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">117579.58</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div data-tooltip="Lower_CI : 1033.29" class="first" style="width: 0.10332881565910004px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1033.29</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div data-tooltip="Lower_CI : 270.51" class="first" style="width: 0.02705118728579999px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">270.51</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Lower_CI : 33.21" class="first" style="width: 0.0033206793146px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33.21</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Lower_CI</span>                is 33.206793146 for <span class='tag is-success is-light'>Units Per thousand registered vehicles</span></h5>
+<span class="tag is-success is-large">33.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div data-tooltip="Lower_CI : 984566.74" class="first" style="width: 98.45667350545584px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">984566.74</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div data-tooltip="Lower_CI : 117579.58" class="first" style="width: 11.757957650929999px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">117579.58</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div data-tooltip="Lower_CI : 1033.29" class="first" style="width: 0.10332881565910004px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1033.29</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div data-tooltip="Lower_CI : 270.51" class="first" style="width: 0.02705118728579999px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">270.51</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Lower_CI : 33.21" class="first" style="width: 0.0033206793146px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33.21</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Upper_CI</span>                is 1082519.9316126015 for <span class='tag is-success is-light'>Units Injuries</span></h5>
+<span class="tag is-success is-large">1082520.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div data-tooltip="Upper_CI : 1082519.93" class="first" style="width: 108.25199316126015px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1082519.93</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div data-tooltip="Upper_CI : 145853.76" class="first" style="width: 14.585375739498788px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">145853.76</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div data-tooltip="Upper_CI : 1303.45" class="first" style="width: 0.1303452187915px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1303.45</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div data-tooltip="Upper_CI : 331.57" class="first" style="width: 0.0331574398325px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">331.57</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Upper_CI : 40.67" class="first" style="width: 0.0040670565881px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">40.67</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Upper_CI</span>                is 40.670565880999995 for <span class='tag is-success is-light'>Units Per thousand registered vehicles</span></h5>
+<span class="tag is-success is-large">41.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Units</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Injuries</td>
+<td>
+<div data-tooltip="Upper_CI : 1082519.93" class="first" style="width: 108.25199316126015px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1082519.93</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 people</td>
+<td>
+<div data-tooltip="Upper_CI : 145853.76" class="first" style="width: 14.585375739498788px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">145853.76</div>
+</td>
+</tr>
+
+<tr>
+<td>Per 100,000 FTEs</td>
+<td>
+<div data-tooltip="Upper_CI : 1303.45" class="first" style="width: 0.1303452187915px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1303.45</div>
+</td>
+</tr>
+
+<tr>
+<td>Per billion km</td>
+<td>
+<div data-tooltip="Upper_CI : 331.57" class="first" style="width: 0.0331574398325px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">331.57</div>
+</td>
+</tr>
+
+<tr>
+<td>Per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Upper_CI : 40.67" class="first" style="width: 0.0040670565881px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">40.67</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Cause</span>                 was 1197 of  <span class='tag is-success is-light'>Indicator Age-standardised rate</span>.</h5>
+<span class="tag is-success is-large">Age-standardised rate</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Cause</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div data-tooltip="Cause : 1197" class="first" style="width: 0.1197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1197</div>
+</td>
+</tr>
+
+<tr>
+<td>Number</td>
+<td>
+<div data-tooltip="Cause : 1197" class="first" style="width: 0.1197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1197</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div data-tooltip="Cause : 33" class="first" style="width: 0.0033px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Cause : 33" class="first" style="width: 0.0033px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Cause</span>                 was 33 of  <span class='tag is-success is-light'>Indicator Rate per thousand registered vehicles</span></h5>
+<span class="tag is-success is-large">Rate per thousand registered vehicles</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Cause</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div data-tooltip="Cause : 1197" class="first" style="width: 0.1197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1197</div>
+</td>
+</tr>
+
+<tr>
+<td>Number</td>
+<td>
+<div data-tooltip="Cause : 1197" class="first" style="width: 0.1197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1197</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div data-tooltip="Cause : 33" class="first" style="width: 0.0033px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Cause : 33" class="first" style="width: 0.0033px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Data_value</span>                is 1033543.33333332 for <span class='tag is-success is-light'>Indicator Number</span></h5>
+<span class="tag is-success is-large">1033543.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Number</td>
+<td>
+<div data-tooltip="Data_value : 1033543.33" class="first" style="width: 103.354333333332px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1033543.33</div>
+</td>
+</tr>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div data-tooltip="Data_value : 132885.04" class="first" style="width: 13.288503712330087px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">132885.04</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div data-tooltip="Data_value : 301.04" class="first" style="width: 0.030104313560300005px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">301.04</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Data_value : 36.94" class="first" style="width: 0.0036938679515000003px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">36.94</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Data_value</span>                is 36.938679515000004 for <span class='tag is-success is-light'>Indicator Rate per thousand registered vehicles</span></h5>
+<span class="tag is-success is-large">37.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Number</td>
+<td>
+<div data-tooltip="Data_value : 1033543.33" class="first" style="width: 103.354333333332px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1033543.33</div>
+</td>
+</tr>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div data-tooltip="Data_value : 132885.04" class="first" style="width: 13.288503712330087px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">132885.04</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div data-tooltip="Data_value : 301.04" class="first" style="width: 0.030104313560300005px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">301.04</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Data_value : 36.94" class="first" style="width: 0.0036938679515000003px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">36.94</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Lower_CI</span>                is 984566.7350545584 for <span class='tag is-success is-light'>Indicator Number</span></h5>
+<span class="tag is-success is-large">984567.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Number</td>
+<td>
+<div data-tooltip="Lower_CI : 984566.74" class="first" style="width: 98.45667350545584px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">984566.74</div>
+</td>
+</tr>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div data-tooltip="Lower_CI : 118612.86" class="first" style="width: 11.861286466589098px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118612.86</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div data-tooltip="Lower_CI : 270.51" class="first" style="width: 0.02705118728579999px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">270.51</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Lower_CI : 33.21" class="first" style="width: 0.0033206793146px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33.21</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Lower_CI</span>                is 33.206793146 for <span class='tag is-success is-light'>Indicator Rate per thousand registered vehicles</span></h5>
+<span class="tag is-success is-large">33.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Number</td>
+<td>
+<div data-tooltip="Lower_CI : 984566.74" class="first" style="width: 98.45667350545584px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">984566.74</div>
+</td>
+</tr>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div data-tooltip="Lower_CI : 118612.86" class="first" style="width: 11.861286466589098px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">118612.86</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div data-tooltip="Lower_CI : 270.51" class="first" style="width: 0.02705118728579999px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">270.51</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Lower_CI : 33.21" class="first" style="width: 0.0033206793146px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33.21</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Upper_CI</span>                is 1082519.9316126015 for <span class='tag is-success is-light'>Indicator Number</span></h5>
+<span class="tag is-success is-large">1082520.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Number</td>
+<td>
+<div data-tooltip="Upper_CI : 1082519.93" class="first" style="width: 108.25199316126015px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1082519.93</div>
+</td>
+</tr>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div data-tooltip="Upper_CI : 147157.21" class="first" style="width: 14.715720958290293px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">147157.21</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div data-tooltip="Upper_CI : 331.57" class="first" style="width: 0.0331574398325px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">331.57</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Upper_CI : 40.67" class="first" style="width: 0.0040670565881px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">40.67</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Upper_CI</span>                is 40.670565880999995 for <span class='tag is-success is-light'>Indicator Rate per thousand registered vehicles</span></h5>
+<span class="tag is-success is-large">41.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Indicator</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Number</td>
+<td>
+<div data-tooltip="Upper_CI : 1082519.93" class="first" style="width: 108.25199316126015px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1082519.93</div>
+</td>
+</tr>
+
+<tr>
+<td>Age-standardised rate</td>
+<td>
+<div data-tooltip="Upper_CI : 147157.21" class="first" style="width: 14.715720958290293px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">147157.21</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per billion km</td>
+<td>
+<div data-tooltip="Upper_CI : 331.57" class="first" style="width: 0.0331574398325px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">331.57</div>
+</td>
+</tr>
+
+<tr>
+<td>Rate per thousand registered vehicles</td>
+<td>
+<div data-tooltip="Upper_CI : 40.67" class="first" style="width: 0.0040670565881px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">40.67</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Data_value</span>                is 490082.34685453994 for <span class='tag is-success is-light'>Cause Falls</span></h5>
+<span class="tag is-success is-large">490082.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Cause</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Falls</td>
+<td>
+<div data-tooltip="Data_value : 490082.35" class="first" style="width: 49.00823468545399px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">490082.35</div>
+</td>
+</tr>
+
+<tr>
+<td>All</td>
+<td>
+<div data-tooltip="Data_value : 469322.48" class="first" style="width: 46.93224774960958px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">469322.48</div>
+</td>
+</tr>
+
+<tr>
+<td>Motor vehicle traffic crashes</td>
+<td>
+<div data-tooltip="Data_value : 105793.02" class="first" style="width: 10.579302246007197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">105793.02</div>
+</td>
+</tr>
+
+<tr>
+<td>Intentional self-harm</td>
+<td>
+<div data-tooltip="Data_value : 35887.05" class="first" style="width: 3.588705487352298px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">35887.05</div>
+</td>
+</tr>
+
+<tr>
+<td>Assault</td>
+<td>
+<div data-tooltip="Data_value : 34028.63" class="first" style="width: 3.4028628340113px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">34028.63</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Data_value</span>                is 1738.899620228 for <span class='tag is-success is-light'>Cause Pedestrian</span></h5>
+<span class="tag is-success is-large">1739.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Cause</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Falls</td>
+<td>
+<div data-tooltip="Data_value : 490082.35" class="first" style="width: 49.00823468545399px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">490082.35</div>
+</td>
+</tr>
+
+<tr>
+<td>All</td>
+<td>
+<div data-tooltip="Data_value : 469322.48" class="first" style="width: 46.93224774960958px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">469322.48</div>
+</td>
+</tr>
+
+<tr>
+<td>Motor vehicle traffic crashes</td>
+<td>
+<div data-tooltip="Data_value : 105793.02" class="first" style="width: 10.579302246007197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">105793.02</div>
+</td>
+</tr>
+
+<tr>
+<td>Intentional self-harm</td>
+<td>
+<div data-tooltip="Data_value : 35887.05" class="first" style="width: 3.588705487352298px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">35887.05</div>
+</td>
+</tr>
+
+<tr>
+<td>Assault</td>
+<td>
+<div data-tooltip="Data_value : 34028.63" class="first" style="width: 3.4028628340113px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">34028.63</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Lower_CI</span>                is 461192.91512022086 for <span class='tag is-success is-light'>Cause Falls</span></h5>
+<span class="tag is-success is-large">461193.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Cause</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Falls</td>
+<td>
+<div data-tooltip="Lower_CI : 461192.92" class="first" style="width: 46.11929151202209px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">461192.92</div>
+</td>
+</tr>
+
+<tr>
+<td>All</td>
+<td>
+<div data-tooltip="Lower_CI : 454783.94" class="first" style="width: 45.478393605005905px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">454783.94</div>
+</td>
+</tr>
+
+<tr>
+<td>Motor vehicle traffic crashes</td>
+<td>
+<div data-tooltip="Lower_CI : 98113.89" class="first" style="width: 9.811389274977115px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">98113.89</div>
+</td>
+</tr>
+
+<tr>
+<td>Intentional self-harm</td>
+<td>
+<div data-tooltip="Lower_CI : 32242.83" class="first" style="width: 3.224283184373997px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">32242.83</div>
+</td>
+</tr>
+
+<tr>
+<td>Assault</td>
+<td>
+<div data-tooltip="Lower_CI : 30309.34" class="first" style="width: 3.030934308383px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">30309.34</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Lower_CI</span>                is 1350.3137996830005 for <span class='tag is-success is-light'>Cause Pedestrian</span></h5>
+<span class="tag is-success is-large">1350.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Cause</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Falls</td>
+<td>
+<div data-tooltip="Lower_CI : 461192.92" class="first" style="width: 46.11929151202209px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">461192.92</div>
+</td>
+</tr>
+
+<tr>
+<td>All</td>
+<td>
+<div data-tooltip="Lower_CI : 454783.94" class="first" style="width: 45.478393605005905px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">454783.94</div>
+</td>
+</tr>
+
+<tr>
+<td>Motor vehicle traffic crashes</td>
+<td>
+<div data-tooltip="Lower_CI : 98113.89" class="first" style="width: 9.811389274977115px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">98113.89</div>
+</td>
+</tr>
+
+<tr>
+<td>Intentional self-harm</td>
+<td>
+<div data-tooltip="Lower_CI : 32242.83" class="first" style="width: 3.224283184373997px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">32242.83</div>
+</td>
+</tr>
+
+<tr>
+<td>Assault</td>
+<td>
+<div data-tooltip="Lower_CI : 30309.34" class="first" style="width: 3.030934308383px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">30309.34</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Upper_CI</span>                is 518971.7785914201 for <span class='tag is-success is-light'>Cause Falls</span></h5>
+<span class="tag is-success is-large">518972.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Cause</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Falls</td>
+<td>
+<div data-tooltip="Upper_CI : 518971.78" class="first" style="width: 51.89717785914201px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">518971.78</div>
+</td>
+</tr>
+
+<tr>
+<td>All</td>
+<td>
+<div data-tooltip="Upper_CI : 483861.02" class="first" style="width: 48.38610189430431px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">483861.02</div>
+</td>
+</tr>
+
+<tr>
+<td>Motor vehicle traffic crashes</td>
+<td>
+<div data-tooltip="Upper_CI : 113472.15" class="first" style="width: 11.347215217013693px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">113472.15</div>
+</td>
+</tr>
+
+<tr>
+<td>Intentional self-harm</td>
+<td>
+<div data-tooltip="Upper_CI : 39531.28" class="first" style="width: 3.9531277902979016px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">39531.28</div>
+</td>
+</tr>
+
+<tr>
+<td>Assault</td>
+<td>
+<div data-tooltip="Upper_CI : 37747.91" class="first" style="width: 3.7747913596357017px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">37747.91</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Upper_CI</span>                is 2127.485440802 for <span class='tag is-success is-light'>Cause Pedestrian</span></h5>
+<span class="tag is-success is-large">2127.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Cause</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Falls</td>
+<td>
+<div data-tooltip="Upper_CI : 518971.78" class="first" style="width: 51.89717785914201px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">518971.78</div>
+</td>
+</tr>
+
+<tr>
+<td>All</td>
+<td>
+<div data-tooltip="Upper_CI : 483861.02" class="first" style="width: 48.38610189430431px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">483861.02</div>
+</td>
+</tr>
+
+<tr>
+<td>Motor vehicle traffic crashes</td>
+<td>
+<div data-tooltip="Upper_CI : 113472.15" class="first" style="width: 11.347215217013693px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">113472.15</div>
+</td>
+</tr>
+
+<tr>
+<td>Intentional self-harm</td>
+<td>
+<div data-tooltip="Upper_CI : 39531.28" class="first" style="width: 3.9531277902979016px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">39531.28</div>
+</td>
+</tr>
+
+<tr>
+<td>Assault</td>
+<td>
+<div data-tooltip="Upper_CI : 37747.91" class="first" style="width: 3.7747913596357017px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">37747.91</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Data_value</span>                is 1151819.3620214213 for <span class='tag is-success is-light'>Validation Validated</span></h5>
+<span class="tag is-success is-large">1151819.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Validation</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Validated</td>
+<td>
+<div data-tooltip="Data_value : 1151819.36" class="first" style="width: 115.18193620214213px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1151819.36</div>
+</td>
+</tr>
+
+<tr>
+<td>Provisional</td>
+<td>
+<div data-tooltip="Data_value : 14946.99" class="first" style="width: 1.4946990250320003px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">14946.99</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Data_value</span>                is 14946.990250320003 for <span class='tag is-success is-light'>Validation Provisional</span></h5>
+<span class="tag is-success is-large">14947.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Validation</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Validated</td>
+<td>
+<div data-tooltip="Data_value : 1151819.36" class="first" style="width: 115.18193620214213px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1151819.36</div>
+</td>
+</tr>
+
+<tr>
+<td>Provisional</td>
+<td>
+<div data-tooltip="Data_value : 14946.99" class="first" style="width: 1.4946990250320003px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">14946.99</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Lower_CI</span>                is 1090117.75666945 for <span class='tag is-success is-light'>Validation Validated</span></h5>
+<span class="tag is-success is-large">1090118.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Validation</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Validated</td>
+<td>
+<div data-tooltip="Lower_CI : 1090117.76" class="first" style="width: 109.01177566694501px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1090117.76</div>
+</td>
+</tr>
+
+<tr>
+<td>Provisional</td>
+<td>
+<div data-tooltip="Lower_CI : 13365.56" class="first" style="width: 1.3365561717002992px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">13365.56</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Lower_CI</span>                is 13365.561717002993 for <span class='tag is-success is-light'>Validation Provisional</span></h5>
+<span class="tag is-success is-large">13366.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Validation</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Validated</td>
+<td>
+<div data-tooltip="Lower_CI : 1090117.76" class="first" style="width: 109.01177566694501px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1090117.76</div>
+</td>
+</tr>
+
+<tr>
+<td>Provisional</td>
+<td>
+<div data-tooltip="Lower_CI : 13365.56" class="first" style="width: 1.3365561717002992px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">13365.56</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Upper_CI</span>                is 1213520.9673762263 for <span class='tag is-success is-light'>Validation Validated</span></h5>
+<span class="tag is-success is-large">1213521.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Validation</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Validated</td>
+<td>
+<div data-tooltip="Upper_CI : 1213520.97" class="first" style="width: 121.35209673762263px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1213520.97</div>
+</td>
+</tr>
+
+<tr>
+<td>Provisional</td>
+<td>
+<div data-tooltip="Upper_CI : 16528.42" class="first" style="width: 1.6528418783481997px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">16528.42</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Upper_CI</span>                is 16528.418783481997 for <span class='tag is-success is-light'>Validation Provisional</span></h5>
+<span class="tag is-success is-large">16528.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Validation</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Validated</td>
+<td>
+<div data-tooltip="Upper_CI : 1213520.97" class="first" style="width: 121.35209673762263px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1213520.97</div>
+</td>
+</tr>
+
+<tr>
+<td>Provisional</td>
+<td>
+<div data-tooltip="Upper_CI : 16528.42" class="first" style="width: 1.6528418783481997px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">16528.42</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Data_value</span>                is 943662.2759872265 for <span class='tag is-success is-light'>Population Whole pop</span></h5>
+<span class="tag is-success is-large">943662.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Population</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Whole pop</td>
+<td>
+<div data-tooltip="Data_value : 943662.28" class="first" style="width: 94.36622759872265px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">943662.28</div>
+</td>
+</tr>
+
+<tr>
+<td>Maori</td>
+<td>
+<div data-tooltip="Data_value : 174029.67" class="first" style="width: 17.40296725143311px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">174029.67</div>
+</td>
+</tr>
+
+<tr>
+<td>Children</td>
+<td>
+<div data-tooltip="Data_value : 49074.4" class="first" style="width: 4.907440377018197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">49074.4</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Data_value</span>                is 49074.403770181976 for <span class='tag is-success is-light'>Population Children</span></h5>
+<span class="tag is-success is-large">49074.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Population</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Whole pop</td>
+<td>
+<div data-tooltip="Data_value : 943662.28" class="first" style="width: 94.36622759872265px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">943662.28</div>
+</td>
+</tr>
+
+<tr>
+<td>Maori</td>
+<td>
+<div data-tooltip="Data_value : 174029.67" class="first" style="width: 17.40296725143311px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">174029.67</div>
+</td>
+</tr>
+
+<tr>
+<td>Children</td>
+<td>
+<div data-tooltip="Data_value : 49074.4" class="first" style="width: 4.907440377018197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">49074.4</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Lower_CI</span>                is 908085.0452908925 for <span class='tag is-success is-light'>Population Whole pop</span></h5>
+<span class="tag is-success is-large">908085.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Population</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Whole pop</td>
+<td>
+<div data-tooltip="Lower_CI : 908085.05" class="first" style="width: 90.80850452908925px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">908085.05</div>
+</td>
+</tr>
+
+<tr>
+<td>Maori</td>
+<td>
+<div data-tooltip="Lower_CI : 152443.07" class="first" style="width: 15.244307453434923px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">152443.07</div>
+</td>
+</tr>
+
+<tr>
+<td>Children</td>
+<td>
+<div data-tooltip="Lower_CI : 42955.2" class="first" style="width: 4.2955198561213px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">42955.2</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Lower_CI</span>                is 42955.198561212994 for <span class='tag is-success is-light'>Population Children</span></h5>
+<span class="tag is-success is-large">42955.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Population</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Whole pop</td>
+<td>
+<div data-tooltip="Lower_CI : 908085.05" class="first" style="width: 90.80850452908925px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">908085.05</div>
+</td>
+</tr>
+
+<tr>
+<td>Maori</td>
+<td>
+<div data-tooltip="Lower_CI : 152443.07" class="first" style="width: 15.244307453434923px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">152443.07</div>
+</td>
+</tr>
+
+<tr>
+<td>Children</td>
+<td>
+<div data-tooltip="Lower_CI : 42955.2" class="first" style="width: 4.2955198561213px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">42955.2</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Upper_CI</span>                is 979239.5066863905 for <span class='tag is-success is-light'>Population Whole pop</span></h5>
+<span class="tag is-success is-large">979240.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Population</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Whole pop</td>
+<td>
+<div data-tooltip="Upper_CI : 979239.51" class="first" style="width: 97.92395066863905px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">979239.51</div>
+</td>
+</tr>
+
+<tr>
+<td>Maori</td>
+<td>
+<div data-tooltip="Upper_CI : 195616.27" class="first" style="width: 19.561627049393984px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">195616.27</div>
+</td>
+</tr>
+
+<tr>
+<td>Children</td>
+<td>
+<div data-tooltip="Upper_CI : 55193.61" class="first" style="width: 5.519360897937799px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">55193.61</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Upper_CI</span>                is 55193.60897937799 for <span class='tag is-success is-light'>Population Children</span></h5>
+<span class="tag is-success is-large">55194.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Population</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Whole pop</td>
+<td>
+<div data-tooltip="Upper_CI : 979239.51" class="first" style="width: 97.92395066863905px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">979239.51</div>
+</td>
+</tr>
+
+<tr>
+<td>Maori</td>
+<td>
+<div data-tooltip="Upper_CI : 195616.27" class="first" style="width: 19.561627049393984px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">195616.27</div>
+</td>
+</tr>
+
+<tr>
+<td>Children</td>
+<td>
+<div data-tooltip="Upper_CI : 55193.61" class="first" style="width: 5.519360897937799px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">55193.61</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Data_value</span>                is 826954.7520963908 for <span class='tag is-success is-light'>Age All ages</span></h5>
+<span class="tag is-success is-large">826955.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Age</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>All ages</td>
+<td>
+<div data-tooltip="Data_value : 826954.75" class="first" style="width: 82.69547520963908px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">826954.75</div>
+</td>
+</tr>
+
+<tr>
+<td>75+ years</td>
+<td>
+<div data-tooltip="Data_value : 221413.08" class="first" style="width: 22.14130788132901px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">221413.08</div>
+</td>
+</tr>
+
+<tr>
+<td>0-74 years</td>
+<td>
+<div data-tooltip="Data_value : 69324.12" class="first" style="width: 6.932411759187699px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">69324.12</div>
+</td>
+</tr>
+
+<tr>
+<td>0-14 years</td>
+<td>
+<div data-tooltip="Data_value : 49074.4" class="first" style="width: 4.907440377018197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">49074.4</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Data_value</span>                is 49074.403770181976 for <span class='tag is-success is-light'>Age 0-14 years</span></h5>
+<span class="tag is-success is-large">49074.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Age</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>All ages</td>
+<td>
+<div data-tooltip="Data_value : 826954.75" class="first" style="width: 82.69547520963908px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">826954.75</div>
+</td>
+</tr>
+
+<tr>
+<td>75+ years</td>
+<td>
+<div data-tooltip="Data_value : 221413.08" class="first" style="width: 22.14130788132901px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">221413.08</div>
+</td>
+</tr>
+
+<tr>
+<td>0-74 years</td>
+<td>
+<div data-tooltip="Data_value : 69324.12" class="first" style="width: 6.932411759187699px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">69324.12</div>
+</td>
+</tr>
+
+<tr>
+<td>0-14 years</td>
+<td>
+<div data-tooltip="Data_value : 49074.4" class="first" style="width: 4.907440377018197px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">49074.4</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Lower_CI</span>                is 791151.9814991594 for <span class='tag is-success is-light'>Age All ages</span></h5>
+<span class="tag is-success is-large">791152.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Age</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>All ages</td>
+<td>
+<div data-tooltip="Lower_CI : 791151.98" class="first" style="width: 79.11519814991594px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">791151.98</div>
+</td>
+</tr>
+
+<tr>
+<td>75+ years</td>
+<td>
+<div data-tooltip="Lower_CI : 204564.92" class="first" style="width: 20.456491892427017px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">204564.92</div>
+</td>
+</tr>
+
+<tr>
+<td>0-74 years</td>
+<td>
+<div data-tooltip="Lower_CI : 64811.22" class="first" style="width: 6.481121940181102px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">64811.22</div>
+</td>
+</tr>
+
+<tr>
+<td>0-14 years</td>
+<td>
+<div data-tooltip="Lower_CI : 42955.2" class="first" style="width: 4.2955198561213px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">42955.2</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Lower_CI</span>                is 42955.198561212994 for <span class='tag is-success is-light'>Age 0-14 years</span></h5>
+<span class="tag is-success is-large">42955.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Age</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>All ages</td>
+<td>
+<div data-tooltip="Lower_CI : 791151.98" class="first" style="width: 79.11519814991594px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">791151.98</div>
+</td>
+</tr>
+
+<tr>
+<td>75+ years</td>
+<td>
+<div data-tooltip="Lower_CI : 204564.92" class="first" style="width: 20.456491892427017px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">204564.92</div>
+</td>
+</tr>
+
+<tr>
+<td>0-74 years</td>
+<td>
+<div data-tooltip="Lower_CI : 64811.22" class="first" style="width: 6.481121940181102px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">64811.22</div>
+</td>
+</tr>
+
+<tr>
+<td>0-14 years</td>
+<td>
+<div data-tooltip="Lower_CI : 42955.2" class="first" style="width: 4.2955198561213px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">42955.2</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Upper_CI</span>                is 862757.5226938312 for <span class='tag is-success is-light'>Age All ages</span></h5>
+<span class="tag is-success is-large">862758.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Age</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>All ages</td>
+<td>
+<div data-tooltip="Upper_CI : 862757.52" class="first" style="width: 86.27575226938312px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">862757.52</div>
+</td>
+</tr>
+
+<tr>
+<td>75+ years</td>
+<td>
+<div data-tooltip="Upper_CI : 238261.24" class="first" style="width: 23.826123870464986px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">238261.24</div>
+</td>
+</tr>
+
+<tr>
+<td>0-74 years</td>
+<td>
+<div data-tooltip="Upper_CI : 73837.02" class="first" style="width: 7.383701578185099px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">73837.02</div>
+</td>
+</tr>
+
+<tr>
+<td>0-14 years</td>
+<td>
+<div data-tooltip="Upper_CI : 55193.61" class="first" style="width: 5.519360897937799px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">55193.61</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Upper_CI</span>                is 55193.60897937799 for <span class='tag is-success is-light'>Age 0-14 years</span></h5>
+<span class="tag is-success is-large">55194.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Age</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>All ages</td>
+<td>
+<div data-tooltip="Upper_CI : 862757.52" class="first" style="width: 86.27575226938312px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">862757.52</div>
+</td>
+</tr>
+
+<tr>
+<td>75+ years</td>
+<td>
+<div data-tooltip="Upper_CI : 238261.24" class="first" style="width: 23.826123870464986px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">238261.24</div>
+</td>
+</tr>
+
+<tr>
+<td>0-74 years</td>
+<td>
+<div data-tooltip="Upper_CI : 73837.02" class="first" style="width: 7.383701578185099px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">73837.02</div>
+</td>
+</tr>
+
+<tr>
+<td>0-14 years</td>
+<td>
+<div data-tooltip="Upper_CI : 55193.61" class="first" style="width: 5.519360897937799px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">55193.61</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Data_value</span>                is 542442.1657669331 for <span class='tag is-success is-light'>Severity Serious</span></h5>
+<span class="tag is-success is-large">542442.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Severity</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Serious</td>
+<td>
+<div data-tooltip="Data_value : 542442.17" class="first" style="width: 54.24421657669331px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">542442.17</div>
+</td>
+</tr>
+
+<tr>
+<td>Serious non-fatal</td>
+<td>
+<div data-tooltip="Data_value : 524350.86" class="first" style="width: 52.435085979605304px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">524350.86</div>
+</td>
+</tr>
+
+<tr>
+<td>Fatal</td>
+<td>
+<div data-tooltip="Data_value : 99973.33" class="first" style="width: 9.997332670875302px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">99973.33</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Data_value</span>                is 99973.32670875303 for <span class='tag is-success is-light'>Severity Fatal</span></h5>
+<span class="tag is-success is-large">99973.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Severity</th>
+
+<th>Data_value</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Serious</td>
+<td>
+<div data-tooltip="Data_value : 542442.17" class="first" style="width: 54.24421657669331px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">542442.17</div>
+</td>
+</tr>
+
+<tr>
+<td>Serious non-fatal</td>
+<td>
+<div data-tooltip="Data_value : 524350.86" class="first" style="width: 52.435085979605304px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">524350.86</div>
+</td>
+</tr>
+
+<tr>
+<td>Fatal</td>
+<td>
+<div data-tooltip="Data_value : 99973.33" class="first" style="width: 9.997332670875302px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">99973.33</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Lower_CI</span>                is 515324.80123311584 for <span class='tag is-success is-light'>Severity Serious</span></h5>
+<span class="tag is-success is-large">515325.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Severity</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Serious</td>
+<td>
+<div data-tooltip="Lower_CI : 515324.8" class="first" style="width: 51.532480123311586px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">515324.8</div>
+</td>
+</tr>
+
+<tr>
+<td>Serious non-fatal</td>
+<td>
+<div data-tooltip="Lower_CI : 498079.23" class="first" style="width: 49.807922724884065px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">498079.23</div>
+</td>
+</tr>
+
+<tr>
+<td>Fatal</td>
+<td>
+<div data-tooltip="Lower_CI : 90079.29" class="first" style="width: 9.007928990449788px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">90079.29</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Lower_CI</span>                is 90079.28990449788 for <span class='tag is-success is-light'>Severity Fatal</span></h5>
+<span class="tag is-success is-large">90079.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Severity</th>
+
+<th>Lower_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Serious</td>
+<td>
+<div data-tooltip="Lower_CI : 515324.8" class="first" style="width: 51.532480123311586px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">515324.8</div>
+</td>
+</tr>
+
+<tr>
+<td>Serious non-fatal</td>
+<td>
+<div data-tooltip="Lower_CI : 498079.23" class="first" style="width: 49.807922724884065px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">498079.23</div>
+</td>
+</tr>
+
+<tr>
+<td>Fatal</td>
+<td>
+<div data-tooltip="Lower_CI : 90079.29" class="first" style="width: 9.007928990449788px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">90079.29</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Upper_CI</span>                is 569559.5303043483 for <span class='tag is-success is-light'>Severity Serious</span></h5>
+<span class="tag is-success is-large">569560.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Severity</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Serious</td>
+<td>
+<div data-tooltip="Upper_CI : 569559.53" class="first" style="width: 56.955953030434834px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">569559.53</div>
+</td>
+</tr>
+
+<tr>
+<td>Serious non-fatal</td>
+<td>
+<div data-tooltip="Upper_CI : 550622.49" class="first" style="width: 55.06224923425345px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">550622.49</div>
+</td>
+</tr>
+
+<tr>
+<td>Fatal</td>
+<td>
+<div data-tooltip="Upper_CI : 109867.36" class="first" style="width: 10.98673635128271px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">109867.36</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Upper_CI</span>                is 109867.3635128271 for <span class='tag is-success is-light'>Severity Fatal</span></h5>
+<span class="tag is-success is-large">109867.0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Severity</th>
+
+<th>Upper_CI</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Serious</td>
+<td>
+<div data-tooltip="Upper_CI : 569559.53" class="first" style="width: 56.955953030434834px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">569559.53</div>
+</td>
+</tr>
+
+<tr>
+<td>Serious non-fatal</td>
+<td>
+<div data-tooltip="Upper_CI : 550622.49" class="first" style="width: 55.06224923425345px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">550622.49</div>
+</td>
+</tr>
+
+<tr>
+<td>Fatal</td>
+<td>
+<div data-tooltip="Upper_CI : 109867.36" class="first" style="width: 10.98673635128271px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">109867.36</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="content has-text-centered">
+<p>
+<strong>Generated</strong> by <a href="http://cognito.readthedocs.io/"><img src="https://cognito.readthedocs.io/en/latest/_images/logo.png" width="60px" /></a>. Licensed Under
+<a href="https://cognito.readthedocs.io/en/latest/license.html">BSD</a>.
+</p>
+</div>
+</div>
+</footer>
+</div>
+</body>
+<script type="text/javascript" src="https://twitter.github.io/typeahead.js/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://underscorejs.org/underscore-min.js"></script>
+<script type="text/javascript" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+
+<script type="text/javascript">
+var stories_json = [{'question': 'Highest Severity was 19 of Series_reference W_F02B.', 'answer': 'W_F02B'}, {'question': 'Lowest Severity was 10 of Series_reference W_S13.', 'answer': 'W_S13'}, {'question': 'Highest Data_value is 172349.0 for Series_reference W_I21.', 'answer': 172349.0}, {'question': 'Lowest Data_value is 18.078982030000002 for Series_reference W_M14.', 'answer': 18.0}, {'question': 'Highest Lower_CI is 168997.78918800002 for Series_reference W_I21.', 'answer': 168998.0}, {'question': 'Lowest Lower_CI is 16.255559641 for Series_reference W_M14.', 'answer': 16.0}, {'question': 'Highest Upper_CI is 175700.210816 for Series_reference W_I21.', 'answer': 175700.0}, {'question': 'Lowest Upper_CI is 19.902404417 for Series_reference W_M14.', 'answer': 20.0}, {'question': 'Highest Age was 118 of Period 2009.', 'answer': '2009'}, {'question': 'Lowest Age was 8 of Period 2016-18.', 'answer': '2016-18'}, {'question': 'Highest Data_value is 76635.79149213499 for Period 2016.', 'answer': 76636.0}, {'question': 'Lowest Data_value is 1037.1950892529999 for Period 2015-17.', 'answer': 1037.0}, {'question': 'Highest Lower_CI is 73172.74109503205 for Period 2016.', 'answer': 73173.0}, {'question': 'Lowest Lower_CI is 913.8700583710001 for Period 2015-17.', 'answer': 914.0}, {'question': 'Highest Upper_CI is 80098.84189000596 for Period 2016.', 'answer': 80099.0}, {'question': 'Lowest Upper_CI is 1160.5201200440001 for Period 2015-17.', 'answer': 1161.0}, {'question': 'Highest Population was 2062 of Type Single year.', 'answer': 'Single year'}, {'question': 'Lowest Population was 398 of Type Moving average.', 'answer': 'Moving average'}, {'question': 'Highest Data_value is 1131578.6601755696 for Type Single year.', 'answer': 1131579.0}, {'question': 'Lowest Data_value is 35187.69209617101 for Type Moving average.', 'answer': 35188.0}, {'question': 'Highest Lower_CI is 1073439.2560671293 for Type Single year.', 'answer': 1073439.0}, {'question': 'Lowest Lower_CI is 30044.062319324014 for Type Moving average.', 'answer': 30044.0}, {'question': 'Highest Upper_CI is 1189718.064287086 for Type Single year.', 'answer': 1189718.0}, {'question': 'Lowest Upper_CI is 40331.32187262305 for Type Moving average.', 'answer': 40331.0}, {'question': 'Highest Validation was 1197 of Units Injuries.', 'answer': 'Injuries'}, {'question': 'Lowest Validation was 33 of Units Per thousand registered vehicles.', 'answer': 'Per thousand registered vehicles'}, {'question': 'Highest Data_value is 1033543.33333332 for Units Injuries.', 'answer': 1033543.0}, {'question': 'Lowest Data_value is 36.938679515000004 for Units Per thousand registered vehicles.', 'answer': 37.0}, {'question': 'Highest Lower_CI is 984566.7350545584 for Units Injuries.', 'answer': 984567.0}, {'question': 'Lowest Lower_CI is 33.206793146 for Units Per thousand registered vehicles.', 'answer': 33.0}, {'question': 'Highest Upper_CI is 1082519.9316126015 for Units Injuries.', 'answer': 1082520.0}, {'question': 'Lowest Upper_CI is 40.670565880999995 for Units Per thousand registered vehicles.', 'answer': 41.0}, {'question': 'Highest Cause was 1197 of Indicator Age-standardised rate.', 'answer': 'Age-standardised rate'}, {'question': 'Lowest Cause was 33 of Indicator Rate per thousand registered vehicles.', 'answer': 'Rate per thousand registered vehicles'}, {'question': 'Highest Data_value is 1033543.33333332 for Indicator Number.', 'answer': 1033543.0}, {'question': 'Lowest Data_value is 36.938679515000004 for Indicator Rate per thousand registered vehicles.', 'answer': 37.0}, {'question': 'Highest Lower_CI is 984566.7350545584 for Indicator Number.', 'answer': 984567.0}, {'question': 'Lowest Lower_CI is 33.206793146 for Indicator Rate per thousand registered vehicles.', 'answer': 33.0}, {'question': 'Highest Upper_CI is 1082519.9316126015 for Indicator Number.', 'answer': 1082520.0}, {'question': 'Lowest Upper_CI is 40.670565880999995 for Indicator Rate per thousand registered vehicles.', 'answer': 41.0}, {'question': 'Highest Data_value is 490082.34685453994 for Cause Falls.', 'answer': 490082.0}, {'question': 'Lowest Data_value is 1738.899620228 for Cause Pedestrian.', 'answer': 1739.0}, {'question': 'Highest Lower_CI is 461192.91512022086 for Cause Falls.', 'answer': 461193.0}, {'question': 'Lowest Lower_CI is 1350.3137996830005 for Cause Pedestrian.', 'answer': 1350.0}, {'question': 'Highest Upper_CI is 518971.7785914201 for Cause Falls.', 'answer': 518972.0}, {'question': 'Lowest Upper_CI is 2127.485440802 for Cause Pedestrian.', 'answer': 2127.0}, {'question': 'Highest Data_value is 1151819.3620214213 for Validation Validated.', 'answer': 1151819.0}, {'question': 'Lowest Data_value is 14946.990250320003 for Validation Provisional.', 'answer': 14947.0}, {'question': 'Highest Lower_CI is 1090117.75666945 for Validation Validated.', 'answer': 1090118.0}, {'question': 'Lowest Lower_CI is 13365.561717002993 for Validation Provisional.', 'answer': 13366.0}, {'question': 'Highest Upper_CI is 1213520.9673762263 for Validation Validated.', 'answer': 1213521.0}, {'question': 'Lowest Upper_CI is 16528.418783481997 for Validation Provisional.', 'answer': 16528.0}, {'question': 'Highest Data_value is 943662.2759872265 for Population Whole pop.', 'answer': 943662.0}, {'question': 'Lowest Data_value is 49074.403770181976 for Population Children.', 'answer': 49074.0}, {'question': 'Highest Lower_CI is 908085.0452908925 for Population Whole pop.', 'answer': 908085.0}, {'question': 'Lowest Lower_CI is 42955.198561212994 for Population Children.', 'answer': 42955.0}, {'question': 'Highest Upper_CI is 979239.5066863905 for Population Whole pop.', 'answer': 979240.0}, {'question': 'Lowest Upper_CI is 55193.60897937799 for Population Children.', 'answer': 55194.0}, {'question': 'Highest Data_value is 826954.7520963908 for Age All ages.', 'answer': 826955.0}, {'question': 'Lowest Data_value is 49074.403770181976 for Age 0-14 years.', 'answer': 49074.0}, {'question': 'Highest Lower_CI is 791151.9814991594 for Age All ages.', 'answer': 791152.0}, {'question': 'Lowest Lower_CI is 42955.198561212994 for Age 0-14 years.', 'answer': 42955.0}, {'question': 'Highest Upper_CI is 862757.5226938312 for Age All ages.', 'answer': 862758.0}, {'question': 'Lowest Upper_CI is 55193.60897937799 for Age 0-14 years.', 'answer': 55194.0}, {'question': 'Highest Data_value is 542442.1657669331 for Severity Serious.', 'answer': 542442.0}, {'question': 'Lowest Data_value is 99973.32670875303 for Severity Fatal.', 'answer': 99973.0}, {'question': 'Highest Lower_CI is 515324.80123311584 for Severity Serious.', 'answer': 515325.0}, {'question': 'Lowest Lower_CI is 90079.28990449788 for Severity Fatal.', 'answer': 90079.0}, {'question': 'Highest Upper_CI is 569559.5303043483 for Severity Serious.', 'answer': 569560.0}, {'question': 'Lowest Upper_CI is 109867.3635128271 for Severity Fatal.', 'answer': 109867.0}];
+var total_categorical = ['Series_reference', 'Period', 'Type', 'Units', 'Indicator', 'Cause', 'Validation', 'Population', 'Age', 'Severity'];
+var total_continuous = ['Data_value', 'Lower_CI', 'Upper_CI'];
+var substringMatcher = function(strs) {
+return function findMatches(q, cb) {
+var matches, substringRegex;
+// an array that will be populated with substring matches
+matches = [];
+// regex used to determine if a string contains the substring `q`
+substrRegex = new RegExp(q, 'i');
+// iterate through the pool of strings and for any string that
+// contains the substring `q`, add it to the `matches` array
+$.each(strs, function(i, str) {
+if (substrRegex.test(str)) {
+matches.push(str);
+}
+});
+cb(matches);
+};
+};
+var states = _.pluck(stories_json, 'question');
+var states = new Bloodhound({
+datumTokenizer: Bloodhound.tokenizers.whitespace,
+queryTokenizer: Bloodhound.tokenizers.whitespace,
+// `states` is an array of state names defined in "The Basics"
+local: states
+});
+$('#bloodhound .typeahead').typeahead({
+hint: true,
+highlight: true,
+minLength: 1
+},
+{
+name: 'states',
+source: states
+});
+$('.typeahead').keyup(function(){
+var txtvalue = this.value;
+txtvalue.length ? $('div .is-4').hide().filter(function(){
+return $(this).text().toLowerCase().indexOf(txtvalue) > 0;
+}).show() : $('div .is-4').show();
+});
+function speak(text) {
+if ('speechSynthesis' in window) {
+var timer = setInterval(function() {
+var voices = speechSynthesis.getVoices();
+if (voices.length !== 0) {
+msg = new SpeechSynthesisUtterance();
+msg.voice = window.speechSynthesis.getVoices()[54];
+msg.text = text.replace('_', ' ');
+speechSynthesis.speak(msg);
+}
+}, 200);
+}
+}
+var final_transcript = '';
+var recognizing = false;
+if ('webkitSpeechRecognition' in window) {
+var recognition = new webkitSpeechRecognition();
+recognition.continuous = true;
+recognition.interimResults = true;
+recognition.onstart = function() {
+recognizing = true;
+};
+recognition.onerror = function(event) {
+console.log(event.error);
+};
+recognition.onend = function() {
+recognizing = false;
+};
+recognition.onresult = function(event) {
+var interim_transcript = '';
+for (var i = event.resultIndex; i < event.results.length; ++i) {
+if (event.results[i].isFinal) {
+final_transcript += event.results[i][0].transcript;
+} else {
+interim_transcript += event.results[i][0].transcript;
+}
+}
+final_transcript = capitalize(final_transcript);
+$('.typeahead').typeahead('val', interim_transcript);
+interim_transcript.length ? $('div .is-4').hide().filter(function(){
+return $(this).text().toLowerCase().indexOf(interim_transcript) > 0;
+}).show() : $('div .is-4').show();
+$('.typeahead').typeahead('val', final_transcript);
+// speak(final_transcript);
+$('.listen').hide();
+$('.microphone').show();
+};
+}
+var two_line = /\n\n/g;
+var one_line = /\n/g;
+function linebreak(s) {
+return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
+}
+function capitalize(s) {
+return s.replace(s.substr(0,1), function(m) { return m.toUpperCase(); });
+}
+function startDictation(event) {
+if (recognizing) {
+recognition.stop();
+return;
+}
+final_transcript = '';
+recognition.lang = 'en-US';
+recognition.start();
+$('.typeahead').typeahead('val', '');
+}
+function story() {
+pre = "Based on the given dataset. Here is the interesting insights found by Cognito. ";
+pre += " There are totally 13 features, in that "+ total_categorical.length +" are categorical variable and "+ total_continuous.length+" are continuous variable."
+speak(pre);
+stories_json.forEach(function(d) {
+text = d.question + ' is ' + String(d.answer);
+speak(text);
+});
+speechSynthesis.cancel();
+}
+</script>
+
+</html>

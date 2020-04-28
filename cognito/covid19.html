@@ -1,0 +1,1622 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cognito Report | 28-April-2020-10:40:1588050602</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<!-- Bulma Version 0.8.x-->
+<link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css">
+</head>
+<body>
+<div id="app">
+<nav class="navbar has-shadow">
+<div class="container">
+<div class="navbar-brand">
+<a class="navbar-item" href="https://cognito.readthedocs.io/en/latest/">
+<img src="https://cognito.readthedocs.io/en/latest/_images/logo.png" alt="Cognito - Toolkit for Data Scientists">
+</a>
+<div class="navbar-burger burger" data-target="navMenu">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="navbar-end">
+<button class="button is-success is-small rounded" onclick="window.print()">
+Generate PDF
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="columns" style="margin-top: 30px;">
+<div class="column">
+
+<style type="text/css">
+.typeahead, .tt-query, .tt-hint {width: 396px; height: 30px; padding: 8px 12px; font-size: 24px; line-height: 30px; border: 2px solid #ccc; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; outline: none; } .typeahead {background-color: #fff; } .typeahead:focus {border: 2px solid #0097cf; } .tt-query {-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); } .tt-hint {color: #999 } .tt-menu {width: 600px; margin: 12px 0; padding: 8px 0; background-color: #fff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2); -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2); box-shadow: 0 5px 10px rgba(0,0,0,.2); } .tt-suggestion {padding: 3px 20px; font-size: 18px; line-height: 24px; } .tt-suggestion:hover {cursor: pointer; color: #fff; background-color: #0097cf; } .tt-suggestion.tt-cursor {color: #fff; background-color: #0097cf; } .tt-suggestion p {margin: 0; }
+.listen { display: none; }
+@media print {
+div.do-not-print {display: none;}
+}
+</style>
+<div class="card column is-half">
+<header class="card-header">
+<p class="card-header-title">
+Data Meta Summary
+</p>
+</header>
+<div class="card-content">
+<table class="table is-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Values</th>
+    </tr>
+    <tr>
+        <td>Total variables</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>Total Observations</td>
+        <td>368</td>
+    </tr>
+    <tr>
+        <td>Missing Cells</td>
+        <td>66</td>
+    </tr>
+    <tr>
+        <td>(%) Missing Cells</td>
+        <td>0.1793478260869565</td>
+    </tr>
+    <tr>
+        <td>Duplicate Rows</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>(%) Duplicate Rows</td>
+        <td>0.0</td>
+    </tr>
+    <tr>
+        <td>Total Size of Memory</td>
+        <td>17.792KiB</td>
+    </tr>
+    <tr>
+        <td>🍋 Total Categorical</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>🔟 Total Continuous</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Started at</td>
+        <td>28-Apr-20 10:40:02</td>
+    </tr>
+    <tr>
+        <td>Ended at</td>
+        <td>28-Apr-20 10:40:02</td>
+    </tr>
+    <tr>
+        <td>Time Elapsed</td>
+        <td>0.195107</td>
+    </tr>
+</table>
+</div>
+</div>
+<div class="card">
+<header class="card-header">
+<p class="card-header-title">
+Descriptive Summary
+</p>
+</header>
+<div class="card-content">
+<table class="table is-bordered">
+    <tr>
+        <th>Features</th>
+        <th>Type</th>
+        <th>Value Type</th>
+        <th>Outliers</th>
+        <th>Missing</th>
+        <th>(%) Missing</th>
+        <th>Distinct Count</th>
+        <th>Min</th>
+        <th>Mean</th>
+        <th>Max</th>
+        <th>Zeros</th>
+        <th>(%) Zeros</th>
+        <th>Memory Size</th>
+    </tr>
+    <tr>
+        <td>Confirmed</td>
+        <td>int64</td>
+        <td>discrete</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>103</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>19</td>
+        <td>3.17</td>
+        <td>3.072KiB</td>
+    </tr>
+    <tr>
+        <td>Province/State</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>🔴</td>
+        <td>17.934782608695652</td>
+        <td>45</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>3.072KiB</td>
+    </tr>
+    <tr>
+        <td>Country</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>24</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>3.072KiB</td>
+    </tr>
+    <tr>
+        <td>Recovered</td>
+        <td>int64</td>
+        <td>discrete</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>14</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>307</td>
+        <td>51.17</td>
+        <td>3.072KiB</td>
+    </tr>
+    <tr>
+        <td>Last Update</td>
+        <td>object</td>
+        <td>categorical</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>10</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>0</td>
+        <td>0.0</td>
+        <td>3.072KiB</td>
+    </tr>
+    <tr>
+        <td>Deaths</td>
+        <td>int64</td>
+        <td>discrete</td>
+        <td>🍋</td>
+        <td>✅</td>
+        <td>0.0</td>
+        <td>10</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>🍋</td>
+        <td>330</td>
+        <td>55.0</td>
+        <td>3.072KiB</td>
+    </tr>
+</table>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card column is-half is-offset-one-quarter do-not-print" style="margin-top: 20px;">
+<h3>Analytical Search Engine</h3>
+<div id="bloodhound">
+<input class="typeahead" type="text" placeholder="Ask your question" style="width: 608px;height: 50px;">
+<img style="position: absolute;" onclick="startDictation()" src="https://i.imgur.com/cHidSVu.gif" class="microphone" />
+<img style="position: absolute;width: 25px;left: 670px;top: 45px;" onclick="story()" src="https://cdn.clipart.email/4b6286d7c0ed6dca7172858b098e2b6b_speaker-icon-vector-art-image-free-stock-photo-public-domain-_2081-2400.png" />
+</div>
+</div>
+<div class="columns is-multiline is-mobile" style="margin-top: 20px;">
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Last Update</span>                 was 8 of  <span class='tag is-success is-light'>Province/State Anhui</span>.</h5>
+<span class="tag is-success is-large">Anhui</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Province/State</th>
+
+<th>Last Update</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Anhui</td>
+<td>
+<div data-tooltip="Last Update : 8" class="first" style="width: 0.08px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+<tr>
+<td>Shandong</td>
+<td>
+<div data-tooltip="Last Update : 8" class="first" style="width: 0.08px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+<tr>
+<td>Jiangxi</td>
+<td>
+<div data-tooltip="Last Update : 8" class="first" style="width: 0.08px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+<tr>
+<td>Jilin</td>
+<td>
+<div data-tooltip="Last Update : 8" class="first" style="width: 0.08px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+<tr>
+<td>Liaoning</td>
+<td>
+<div data-tooltip="Last Update : 8" class="first" style="width: 0.08px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Last Update</span>                 was 1 of  <span class='tag is-success is-light'>Province/State Bavaria</span></h5>
+<span class="tag is-success is-large">Bavaria</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Province/State</th>
+
+<th>Last Update</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Anhui</td>
+<td>
+<div data-tooltip="Last Update : 8" class="first" style="width: 0.08px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+<tr>
+<td>Shandong</td>
+<td>
+<div data-tooltip="Last Update : 8" class="first" style="width: 0.08px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+<tr>
+<td>Jiangxi</td>
+<td>
+<div data-tooltip="Last Update : 8" class="first" style="width: 0.08px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+<tr>
+<td>Jilin</td>
+<td>
+<div data-tooltip="Last Update : 8" class="first" style="width: 0.08px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+<tr>
+<td>Liaoning</td>
+<td>
+<div data-tooltip="Last Update : 8" class="first" style="width: 0.08px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">8</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Confirmed</span>                is 14766 for <span class='tag is-success is-light'>Province/State Hubei</span></h5>
+<span class="tag is-success is-large">14766</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Province/State</th>
+
+<th>Confirmed</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Hubei</td>
+<td>
+<div data-tooltip="Confirmed : 14766" class="first" style="width: 147.66px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">14766</div>
+</td>
+</tr>
+
+<tr>
+<td>Zhejiang</td>
+<td>
+<div data-tooltip="Confirmed : 1209" class="first" style="width: 12.09px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1209</div>
+</td>
+</tr>
+
+<tr>
+<td>Guangdong</td>
+<td>
+<div data-tooltip="Confirmed : 1058" class="first" style="width: 10.58px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1058</div>
+</td>
+</tr>
+
+<tr>
+<td>Henan</td>
+<td>
+<div data-tooltip="Confirmed : 882" class="first" style="width: 8.82px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">882</div>
+</td>
+</tr>
+
+<tr>
+<td>Hunan</td>
+<td>
+<div data-tooltip="Confirmed : 804" class="first" style="width: 8.04px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">804</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Confirmed</span>                is 1 for <span class='tag is-success is-light'>Province/State Chicago</span></h5>
+<span class="tag is-success is-large">1</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Province/State</th>
+
+<th>Confirmed</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Hubei</td>
+<td>
+<div data-tooltip="Confirmed : 14766" class="first" style="width: 147.66px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">14766</div>
+</td>
+</tr>
+
+<tr>
+<td>Zhejiang</td>
+<td>
+<div data-tooltip="Confirmed : 1209" class="first" style="width: 12.09px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1209</div>
+</td>
+</tr>
+
+<tr>
+<td>Guangdong</td>
+<td>
+<div data-tooltip="Confirmed : 1058" class="first" style="width: 10.58px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1058</div>
+</td>
+</tr>
+
+<tr>
+<td>Henan</td>
+<td>
+<div data-tooltip="Confirmed : 882" class="first" style="width: 8.82px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">882</div>
+</td>
+</tr>
+
+<tr>
+<td>Hunan</td>
+<td>
+<div data-tooltip="Confirmed : 804" class="first" style="width: 8.04px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">804</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Deaths</span>                is 556 for <span class='tag is-success is-light'>Province/State Hubei</span></h5>
+<span class="tag is-success is-large">556</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Province/State</th>
+
+<th>Deaths</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Hubei</td>
+<td>
+<div data-tooltip="Deaths : 556" class="first" style="width: 5.56px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">556</div>
+</td>
+</tr>
+
+<tr>
+<td>Henan</td>
+<td>
+<div data-tooltip="Deaths : 7" class="first" style="width: 0.07px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">7</div>
+</td>
+</tr>
+
+<tr>
+<td>Hebei</td>
+<td>
+<div data-tooltip="Deaths : 7" class="first" style="width: 0.07px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">7</div>
+</td>
+</tr>
+
+<tr>
+<td>Heilongjiang</td>
+<td>
+<div data-tooltip="Deaths : 5" class="first" style="width: 0.05px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">5</div>
+</td>
+</tr>
+
+<tr>
+<td>Shanghai</td>
+<td>
+<div data-tooltip="Deaths : 5" class="first" style="width: 0.05px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">5</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Deaths</span>                is 0 for <span class='tag is-success is-light'>Province/State Zhejiang</span></h5>
+<span class="tag is-success is-large">0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Province/State</th>
+
+<th>Deaths</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Hubei</td>
+<td>
+<div data-tooltip="Deaths : 556" class="first" style="width: 5.56px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">556</div>
+</td>
+</tr>
+
+<tr>
+<td>Henan</td>
+<td>
+<div data-tooltip="Deaths : 7" class="first" style="width: 0.07px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">7</div>
+</td>
+</tr>
+
+<tr>
+<td>Hebei</td>
+<td>
+<div data-tooltip="Deaths : 7" class="first" style="width: 0.07px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">7</div>
+</td>
+</tr>
+
+<tr>
+<td>Heilongjiang</td>
+<td>
+<div data-tooltip="Deaths : 5" class="first" style="width: 0.05px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">5</div>
+</td>
+</tr>
+
+<tr>
+<td>Shanghai</td>
+<td>
+<div data-tooltip="Deaths : 5" class="first" style="width: 0.05px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">5</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Recovered</span>                is 362 for <span class='tag is-success is-light'>Province/State Hubei</span></h5>
+<span class="tag is-success is-large">362</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Province/State</th>
+
+<th>Recovered</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Hubei</td>
+<td>
+<div data-tooltip="Recovered : 362" class="first" style="width: 3.62px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">362</div>
+</td>
+</tr>
+
+<tr>
+<td>Guangdong</td>
+<td>
+<div data-tooltip="Recovered : 23" class="first" style="width: 0.23px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">23</div>
+</td>
+</tr>
+
+<tr>
+<td>Shanghai</td>
+<td>
+<div data-tooltip="Recovered : 15" class="first" style="width: 0.15px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">15</div>
+</td>
+</tr>
+
+<tr>
+<td>Beijing</td>
+<td>
+<div data-tooltip="Recovered : 15" class="first" style="width: 0.15px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">15</div>
+</td>
+</tr>
+
+<tr>
+<td>Zhejiang</td>
+<td>
+<div data-tooltip="Recovered : 11" class="first" style="width: 0.11px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">11</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Recovered</span>                is 0 for <span class='tag is-success is-light'>Province/State Macau</span></h5>
+<span class="tag is-success is-large">0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Province/State</th>
+
+<th>Recovered</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Hubei</td>
+<td>
+<div data-tooltip="Recovered : 362" class="first" style="width: 3.62px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">362</div>
+</td>
+</tr>
+
+<tr>
+<td>Guangdong</td>
+<td>
+<div data-tooltip="Recovered : 23" class="first" style="width: 0.23px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">23</div>
+</td>
+</tr>
+
+<tr>
+<td>Shanghai</td>
+<td>
+<div data-tooltip="Recovered : 15" class="first" style="width: 0.15px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">15</div>
+</td>
+</tr>
+
+<tr>
+<td>Beijing</td>
+<td>
+<div data-tooltip="Recovered : 15" class="first" style="width: 0.15px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">15</div>
+</td>
+</tr>
+
+<tr>
+<td>Zhejiang</td>
+<td>
+<div data-tooltip="Recovered : 11" class="first" style="width: 0.11px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">11</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Confirmed</span>                is 24328 for <span class='tag is-success is-light'>Country Mainland China</span></h5>
+<span class="tag is-success is-large">24328</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Country</th>
+
+<th>Confirmed</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Mainland China</td>
+<td>
+<div data-tooltip="Confirmed : 24328" class="first" style="width: 243.28px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">24328</div>
+</td>
+</tr>
+
+<tr>
+<td>China</td>
+<td>
+<div data-tooltip="Confirmed : 549" class="first" style="width: 5.49px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">549</div>
+</td>
+</tr>
+
+<tr>
+<td>Thailand</td>
+<td>
+<div data-tooltip="Confirmed : 61" class="first" style="width: 0.61px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">61</div>
+</td>
+</tr>
+
+<tr>
+<td>Hong Kong</td>
+<td>
+<div data-tooltip="Confirmed : 43" class="first" style="width: 0.43px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">43</div>
+</td>
+</tr>
+
+<tr>
+<td>Japan</td>
+<td>
+<div data-tooltip="Confirmed : 33" class="first" style="width: 0.33px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Confirmed</span>                is 0 for <span class='tag is-success is-light'>Country Philippines</span></h5>
+<span class="tag is-success is-large">0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Country</th>
+
+<th>Confirmed</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Mainland China</td>
+<td>
+<div data-tooltip="Confirmed : 24328" class="first" style="width: 243.28px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">24328</div>
+</td>
+</tr>
+
+<tr>
+<td>China</td>
+<td>
+<div data-tooltip="Confirmed : 549" class="first" style="width: 5.49px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">549</div>
+</td>
+</tr>
+
+<tr>
+<td>Thailand</td>
+<td>
+<div data-tooltip="Confirmed : 61" class="first" style="width: 0.61px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">61</div>
+</td>
+</tr>
+
+<tr>
+<td>Hong Kong</td>
+<td>
+<div data-tooltip="Confirmed : 43" class="first" style="width: 0.43px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">43</div>
+</td>
+</tr>
+
+<tr>
+<td>Japan</td>
+<td>
+<div data-tooltip="Confirmed : 33" class="first" style="width: 0.33px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">33</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Deaths</span>                is 589 for <span class='tag is-success is-light'>Country Mainland China</span></h5>
+<span class="tag is-success is-large">589</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Country</th>
+
+<th>Deaths</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Mainland China</td>
+<td>
+<div data-tooltip="Deaths : 589" class="first" style="width: 5.89px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">589</div>
+</td>
+</tr>
+
+<tr>
+<td>Brazil</td>
+<td>
+<div data-tooltip="Deaths : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>US</td>
+<td>
+<div data-tooltip="Deaths : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>Thailand</td>
+<td>
+<div data-tooltip="Deaths : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>Taiwan</td>
+<td>
+<div data-tooltip="Deaths : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Deaths</span>                is 0 for <span class='tag is-success is-light'>Country Vietnam</span></h5>
+<span class="tag is-success is-large">0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Country</th>
+
+<th>Deaths</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Mainland China</td>
+<td>
+<div data-tooltip="Deaths : 589" class="first" style="width: 5.89px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">589</div>
+</td>
+</tr>
+
+<tr>
+<td>Brazil</td>
+<td>
+<div data-tooltip="Deaths : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>US</td>
+<td>
+<div data-tooltip="Deaths : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>Thailand</td>
+<td>
+<div data-tooltip="Deaths : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>Taiwan</td>
+<td>
+<div data-tooltip="Deaths : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Recovered</span>                is 457 for <span class='tag is-success is-light'>Country Mainland China</span></h5>
+<span class="tag is-success is-large">457</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Country</th>
+
+<th>Recovered</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Mainland China</td>
+<td>
+<div data-tooltip="Recovered : 457" class="first" style="width: 4.57px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">457</div>
+</td>
+</tr>
+
+<tr>
+<td>Thailand</td>
+<td>
+<div data-tooltip="Recovered : 14" class="first" style="width: 0.14px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">14</div>
+</td>
+</tr>
+
+<tr>
+<td>Japan</td>
+<td>
+<div data-tooltip="Recovered : 4" class="first" style="width: 0.04px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">4</div>
+</td>
+</tr>
+
+<tr>
+<td>Malaysia</td>
+<td>
+<div data-tooltip="Recovered : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>US</td>
+<td>
+<div data-tooltip="Recovered : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Recovered</span>                is 0 for <span class='tag is-success is-light'>Country Vietnam</span></h5>
+<span class="tag is-success is-large">0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Country</th>
+
+<th>Recovered</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>Mainland China</td>
+<td>
+<div data-tooltip="Recovered : 457" class="first" style="width: 4.57px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">457</div>
+</td>
+</tr>
+
+<tr>
+<td>Thailand</td>
+<td>
+<div data-tooltip="Recovered : 14" class="first" style="width: 0.14px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">14</div>
+</td>
+</tr>
+
+<tr>
+<td>Japan</td>
+<td>
+<div data-tooltip="Recovered : 4" class="first" style="width: 0.04px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">4</div>
+</td>
+</tr>
+
+<tr>
+<td>Malaysia</td>
+<td>
+<div data-tooltip="Recovered : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+<tr>
+<td>US</td>
+<td>
+<div data-tooltip="Recovered : 0" class="first" style="width: 0.0px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">0</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Confirmed</span>                is 7779 for <span class='tag is-success is-light'>Last Update 1/29/20 21:00</span></h5>
+<span class="tag is-success is-large">7779</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Last Update</th>
+
+<th>Confirmed</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>1/29/20 21:00</td>
+<td>
+<div data-tooltip="Confirmed : 7779" class="first" style="width: 77.79px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">7779</div>
+</td>
+</tr>
+
+<tr>
+<td>1/28/20 23:00</td>
+<td>
+<div data-tooltip="Confirmed : 6052" class="first" style="width: 60.52px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">6052</div>
+</td>
+</tr>
+
+<tr>
+<td>1/27/20 20:30</td>
+<td>
+<div data-tooltip="Confirmed : 4472" class="first" style="width: 44.72px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">4472</div>
+</td>
+</tr>
+
+<tr>
+<td>1/26/20 23:00</td>
+<td>
+<div data-tooltip="Confirmed : 2793" class="first" style="width: 27.93px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">2793</div>
+</td>
+</tr>
+
+<tr>
+<td>1/25/20 22:00</td>
+<td>
+<div data-tooltip="Confirmed : 1156" class="first" style="width: 11.56px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1156</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Confirmed</span>                is 1 for <span class='tag is-success is-light'>Last Update 1/28/20 18:00</span></h5>
+<span class="tag is-success is-large">1</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Last Update</th>
+
+<th>Confirmed</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>1/29/20 21:00</td>
+<td>
+<div data-tooltip="Confirmed : 7779" class="first" style="width: 77.79px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">7779</div>
+</td>
+</tr>
+
+<tr>
+<td>1/28/20 23:00</td>
+<td>
+<div data-tooltip="Confirmed : 6052" class="first" style="width: 60.52px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">6052</div>
+</td>
+</tr>
+
+<tr>
+<td>1/27/20 20:30</td>
+<td>
+<div data-tooltip="Confirmed : 4472" class="first" style="width: 44.72px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">4472</div>
+</td>
+</tr>
+
+<tr>
+<td>1/26/20 23:00</td>
+<td>
+<div data-tooltip="Confirmed : 2793" class="first" style="width: 27.93px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">2793</div>
+</td>
+</tr>
+
+<tr>
+<td>1/25/20 22:00</td>
+<td>
+<div data-tooltip="Confirmed : 1156" class="first" style="width: 11.56px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">1156</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Deaths</span>                is 170 for <span class='tag is-success is-light'>Last Update 1/29/20 21:00</span></h5>
+<span class="tag is-success is-large">170</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Last Update</th>
+
+<th>Deaths</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>1/29/20 21:00</td>
+<td>
+<div data-tooltip="Deaths : 170" class="first" style="width: 1.7px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">170</div>
+</td>
+</tr>
+
+<tr>
+<td>1/28/20 23:00</td>
+<td>
+<div data-tooltip="Deaths : 132" class="first" style="width: 1.32px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">132</div>
+</td>
+</tr>
+
+<tr>
+<td>1/27/20 20:30</td>
+<td>
+<div data-tooltip="Deaths : 107" class="first" style="width: 1.07px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">107</div>
+</td>
+</tr>
+
+<tr>
+<td>1/26/20 23:00</td>
+<td>
+<div data-tooltip="Deaths : 80" class="first" style="width: 0.8px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">80</div>
+</td>
+</tr>
+
+<tr>
+<td>1/25/20 22:00</td>
+<td>
+<div data-tooltip="Deaths : 52" class="first" style="width: 0.52px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">52</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Deaths</span>                is 0 for <span class='tag is-success is-light'>Last Update 1/28/20 18:00</span></h5>
+<span class="tag is-success is-large">0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Last Update</th>
+
+<th>Deaths</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>1/29/20 21:00</td>
+<td>
+<div data-tooltip="Deaths : 170" class="first" style="width: 1.7px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">170</div>
+</td>
+</tr>
+
+<tr>
+<td>1/28/20 23:00</td>
+<td>
+<div data-tooltip="Deaths : 132" class="first" style="width: 1.32px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">132</div>
+</td>
+</tr>
+
+<tr>
+<td>1/27/20 20:30</td>
+<td>
+<div data-tooltip="Deaths : 107" class="first" style="width: 1.07px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">107</div>
+</td>
+</tr>
+
+<tr>
+<td>1/26/20 23:00</td>
+<td>
+<div data-tooltip="Deaths : 80" class="first" style="width: 0.8px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">80</div>
+</td>
+</tr>
+
+<tr>
+<td>1/25/20 22:00</td>
+<td>
+<div data-tooltip="Deaths : 52" class="first" style="width: 0.52px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">52</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Highest <span class='tag is-primary is-light'>Recovered</span>                is 133 for <span class='tag is-success is-light'>Last Update 1/29/20 21:00</span></h5>
+<span class="tag is-success is-large">133</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Last Update</th>
+
+<th>Recovered</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>1/29/20 21:00</td>
+<td>
+<div data-tooltip="Recovered : 133" class="first" style="width: 1.33px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">133</div>
+</td>
+</tr>
+
+<tr>
+<td>1/28/20 23:00</td>
+<td>
+<div data-tooltip="Recovered : 110" class="first" style="width: 1.1px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">110</div>
+</td>
+</tr>
+
+<tr>
+<td>1/27/20 20:30</td>
+<td>
+<div data-tooltip="Recovered : 63" class="first" style="width: 0.63px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">63</div>
+</td>
+</tr>
+
+<tr>
+<td>1/26/20 23:00</td>
+<td>
+<div data-tooltip="Recovered : 54" class="first" style="width: 0.54px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">54</div>
+</td>
+</tr>
+
+<tr>
+<td>1/25/20 22:00</td>
+<td>
+<div data-tooltip="Recovered : 43" class="first" style="width: 0.43px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">43</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="column is-4">
+<div class="card">
+<div class="card-content">
+<div class="content">
+<h5>Lowest <span class='tag is-primary is-light'>Recovered</span>                is 0 for <span class='tag is-success is-light'>Last Update 1/28/20 18:00</span></h5>
+<span class="tag is-success is-large">0</span>
+
+<div class="bar">
+<table>
+<thead>
+
+<th>Last Update</th>
+
+<th>Recovered</th>
+
+</thead>
+<tbody>
+
+<tr>
+<td>1/29/20 21:00</td>
+<td>
+<div data-tooltip="Recovered : 133" class="first" style="width: 1.33px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">133</div>
+</td>
+</tr>
+
+<tr>
+<td>1/28/20 23:00</td>
+<td>
+<div data-tooltip="Recovered : 110" class="first" style="width: 1.1px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">110</div>
+</td>
+</tr>
+
+<tr>
+<td>1/27/20 20:30</td>
+<td>
+<div data-tooltip="Recovered : 63" class="first" style="width: 0.63px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">63</div>
+</td>
+</tr>
+
+<tr>
+<td>1/26/20 23:00</td>
+<td>
+<div data-tooltip="Recovered : 54" class="first" style="width: 0.54px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">54</div>
+</td>
+</tr>
+
+<tr>
+<td>1/25/20 22:00</td>
+<td>
+<div data-tooltip="Recovered : 43" class="first" style="width: 0.43px; height:20px; font-size: 12px; background-color: #ffc107 !important; margin:2px 0px; color:#000 !important">43</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="content has-text-centered">
+<p>
+<strong>Generated</strong> by <a href="http://cognito.readthedocs.io/"><img src="https://cognito.readthedocs.io/en/latest/_images/logo.png" width="60px" /></a>. Licensed Under
+<a href="https://cognito.readthedocs.io/en/latest/license.html">BSD</a>.
+</p>
+</div>
+</div>
+</footer>
+</div>
+</body>
+<script type="text/javascript" src="https://twitter.github.io/typeahead.js/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://underscorejs.org/underscore-min.js"></script>
+<script type="text/javascript" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+
+<script type="text/javascript">
+var stories_json = [{'question': 'Highest Last Update was 8 of Province/State Anhui.', 'answer': 'Anhui'}, {'question': 'Lowest Last Update was 1 of Province/State Bavaria.', 'answer': 'Bavaria'}, {'question': 'Highest Confirmed is 14766 for Province/State Hubei.', 'answer': 14766}, {'question': 'Lowest Confirmed is 1 for Province/State Chicago.', 'answer': 1}, {'question': 'Highest Deaths is 556 for Province/State Hubei.', 'answer': 556}, {'question': 'Lowest Deaths is 0 for Province/State Zhejiang.', 'answer': 0}, {'question': 'Highest Recovered is 362 for Province/State Hubei.', 'answer': 362}, {'question': 'Lowest Recovered is 0 for Province/State Macau.', 'answer': 0}, {'question': 'Highest Confirmed is 24328 for Country Mainland China.', 'answer': 24328}, {'question': 'Lowest Confirmed is 0 for Country Philippines.', 'answer': 0}, {'question': 'Highest Deaths is 589 for Country Mainland China.', 'answer': 589}, {'question': 'Lowest Deaths is 0 for Country Vietnam.', 'answer': 0}, {'question': 'Highest Recovered is 457 for Country Mainland China.', 'answer': 457}, {'question': 'Lowest Recovered is 0 for Country Vietnam.', 'answer': 0}, {'question': 'Highest Confirmed is 7779 for Last Update 1/29/20 21:00.', 'answer': 7779}, {'question': 'Lowest Confirmed is 1 for Last Update 1/28/20 18:00.', 'answer': 1}, {'question': 'Highest Deaths is 170 for Last Update 1/29/20 21:00.', 'answer': 170}, {'question': 'Lowest Deaths is 0 for Last Update 1/28/20 18:00.', 'answer': 0}, {'question': 'Highest Recovered is 133 for Last Update 1/29/20 21:00.', 'answer': 133}, {'question': 'Lowest Recovered is 0 for Last Update 1/28/20 18:00.', 'answer': 0}];
+var total_categorical = ['Province/State', 'Country', 'Last Update'];
+var total_continuous = ['Confirmed', 'Deaths', 'Recovered'];
+var substringMatcher = function(strs) {
+return function findMatches(q, cb) {
+var matches, substringRegex;
+// an array that will be populated with substring matches
+matches = [];
+// regex used to determine if a string contains the substring `q`
+substrRegex = new RegExp(q, 'i');
+// iterate through the pool of strings and for any string that
+// contains the substring `q`, add it to the `matches` array
+$.each(strs, function(i, str) {
+if (substrRegex.test(str)) {
+matches.push(str);
+}
+});
+cb(matches);
+};
+};
+var states = _.pluck(stories_json, 'question');
+var states = new Bloodhound({
+datumTokenizer: Bloodhound.tokenizers.whitespace,
+queryTokenizer: Bloodhound.tokenizers.whitespace,
+// `states` is an array of state names defined in "The Basics"
+local: states
+});
+$('#bloodhound .typeahead').typeahead({
+hint: true,
+highlight: true,
+minLength: 1
+},
+{
+name: 'states',
+source: states
+});
+$('.typeahead').keyup(function(){
+var txtvalue = this.value;
+txtvalue.length ? $('div .is-4').hide().filter(function(){
+return $(this).text().toLowerCase().indexOf(txtvalue) > 0;
+}).show() : $('div .is-4').show();
+});
+function speak(text) {
+if ('speechSynthesis' in window) {
+var timer = setInterval(function() {
+var voices = speechSynthesis.getVoices();
+if (voices.length !== 0) {
+msg = new SpeechSynthesisUtterance();
+msg.voice = window.speechSynthesis.getVoices()[54];
+msg.text = text.replace('_', ' ');
+speechSynthesis.speak(msg);
+}
+}, 200);
+}
+}
+var final_transcript = '';
+var recognizing = false;
+if ('webkitSpeechRecognition' in window) {
+var recognition = new webkitSpeechRecognition();
+recognition.continuous = true;
+recognition.interimResults = true;
+recognition.onstart = function() {
+recognizing = true;
+};
+recognition.onerror = function(event) {
+console.log(event.error);
+};
+recognition.onend = function() {
+recognizing = false;
+};
+recognition.onresult = function(event) {
+var interim_transcript = '';
+for (var i = event.resultIndex; i < event.results.length; ++i) {
+if (event.results[i].isFinal) {
+final_transcript += event.results[i][0].transcript;
+} else {
+interim_transcript += event.results[i][0].transcript;
+}
+}
+final_transcript = capitalize(final_transcript);
+$('.typeahead').typeahead('val', interim_transcript);
+interim_transcript.length ? $('div .is-4').hide().filter(function(){
+return $(this).text().toLowerCase().indexOf(interim_transcript) > 0;
+}).show() : $('div .is-4').show();
+$('.typeahead').typeahead('val', final_transcript);
+// speak(final_transcript);
+$('.listen').hide();
+$('.microphone').show();
+};
+}
+var two_line = /\n\n/g;
+var one_line = /\n/g;
+function linebreak(s) {
+return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
+}
+function capitalize(s) {
+return s.replace(s.substr(0,1), function(m) { return m.toUpperCase(); });
+}
+function startDictation(event) {
+if (recognizing) {
+recognition.stop();
+return;
+}
+final_transcript = '';
+recognition.lang = 'en-US';
+recognition.start();
+$('.typeahead').typeahead('val', '');
+}
+function story() {
+pre = "Based on the given dataset. Here is the interesting insights found by Cognito. ";
+pre += " There are totally 13 features, in that "+ total_categorical.length +" are categorical variable and "+ total_continuous.length+" are continuous variable."
+speak(pre);
+stories_json.forEach(function(d) {
+text = d.question + ' is ' + String(d.answer);
+speak(text);
+});
+speechSynthesis.cancel();
+}
+</script>
+
+</html>
