@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Hands-On Foundational Data Science Bootcamp</title>
+  <title>Foundational Data Science Crash Course</title>
 
   <META NAME="author" CONTENT="Bastin Robins J">
   <META NAME="subject" CONTENT="CleverInsight">
@@ -269,61 +269,9 @@
         <div class="">
           <h2 style="font-weight: bold; color: rgb(81, 52, 9); margin-bottom: 0px;"><span class="highlight">{{ name }}</span></h2>
           <small style="color: grey; font-style: italic; font-size: 14pt;"> Are you someone who works as <span class="label" style="color: #4CAF50;background: #edfadf;">Faculty, Programmer, Manager or Student</span> who feels naive about data science? This bootcamp is your life saver with realtime examples to make things simpler. <span class="label" style="color: #4CAF50;background: #edfadf;">No Coding Experience Required!</span></small>
-          <h5><span class="badge badge-success">3 Days - Series 1</span></h5>
+          <h5><span class="badge badge-success">3 Months</span></h5>
           <!-- <p>Here is our event schedule</p> -->
-          <div class="row">
-            <div class="col-md-6">
-              <!-- <img src="../webinars/assets/img/data-science.png" />
-              <img src="../webinars/assets/img/csg-data-analytics.png" /> -->
-              <div class="row">
-                <div class="col-md-12">
-                  <img src="https://www.jing.fm/clipimg/full/220-2205720_r-for-data-science-data-science-cartoon-transparent.png">
-                </div>
-                <div class="col-md-8" style="top:40px">
-                  <h4 style="margin-bottom: 2px;"><b>Key Takeaways</b></h4>
-
-                  <ul class="list-group">
-                    <li style="font-size: 20px; line-height: 1.1; font-style: italic;" class="text-muted">10 Hours of training</li>
-                    <li style="font-size: 20px; line-height: 1.1; font-style: italic;" class="text-muted">8+ LIVE Mentor Coding Sessions</li>
-                    <li style="font-size: 20px; line-height: 1.1; font-style: italic;" class="text-muted">1 Github Project</li>
-                    <li style="font-size: 20px; line-height: 1.1; font-style: italic;" class="text-muted">Certificate Of Completion</li>
-
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-md-6 card card-body" style="border:3px dashed #03A9F4;">
-              <!-- <h3 style="text-decoration: underline; font-weight: bolder;">Overview</h4> -->
-              <div class="row">
-                <div class="col-md-4">
-                  <img src="https://media-exp1.licdn.com/dms/image/C5603AQHiAp4NfT_JJQ/profile-displayphoto-shrink_400_400/0?e=1596672000&v=beta&t=WqjBs44sSJN_0-Pd3O660E4gra3HReHhgWDDlnl8rLs" width="200px">
-                </div>
-                <div class="col-md-8">
-                  <h4 style="margin-bottom: 2px;"><b>Instructor:</b> Bastin Robins .J</h4>
-                  <h6>Chief Data Scientist</h6>
-                  <p>A seasoned Data Scientist who has successfully built data products for an array of sectors including FMCG's, Retail, Banking, Telecom, Social and Government organizations from scratch and deployed it successfully with great feedbacks.</p>
-                </div>
-
-                <div class="col-md-7">
-                  <h5><b class="text-info">Date:</b> 17th, 18th, 19th July 2020</h5>
-                  <h5><b class="text-info">Shareable Certificate:</b> LetSign Credentials </h5>
-                </div>
-
-                <div class="col-md-5">
-                  <h5><b class="text-info">Platform:</b> Google meet</h5>
-                  <h5><b class="text-info">Tools:</b> Google Colab</h5>
-
-                </div>
-                <div class="col-md-12">
-                   <p style="font-style: italic;">Its 2020 and by now you have heard about data science. This Crash Course is a quick way to start your journey with Data Science. The goal is to get you up to speed as quickly as possible on data science without all the fluff. We've designed this course to be as convenient as possible without sacrificing any of the essentials.</p>
-                   <a href="https://pages.razorpay.com/hands-on-datascience-bootcamp" class="btn btn-block btn-success">Register Now In ₹599/ <small class="pull-right">*Inclusive of all taxes</small></a>
-                </div>
-              </div>
-              
-
-            </div>
-          </div>
+       
         </div>  
         
 
@@ -332,14 +280,14 @@
           <div role="tabpanel" class="col-lg-12 tab-pane fade show active" id="day-1">
             <div v-for="(day, index) in contents">
             <div class="row divider" :style="getDividerColor(index)">
-              <h3 class="mx-auto" style="font-weight: 800; text-align: 'center'; text-decoration: underline;">Day {{ index+1 }}</h3>
+              <h3 class="mx-auto" style="font-weight: 800; text-align: 'center'; text-decoration: underline;">Month {{ index+1 }}</h3>
             </div>
             <div :class="'row schedule-item '+ getDayColor(content.day)" v-for="content in day">
-              <div class="col-md-2">
+              <!-- <div class="col-md-2">
                 <h4><span :class="'badge badge-' + getDayLabel(content.day)" style="color: #fff;">{{ content.date }}</span></h4>
-                <!-- <span :class="'badge badge-' + getDayLabel(content.day)">DAY - {{ content.day }}</span><br> -->
-                <time style="font-size: 11px; font-weight: bolder;">{{ content.time }}</time>
-              </div>
+                <span :class="'badge badge-' + getDayLabel(content.day)">DAY - {{ content.day }}</span><br>
+                 <time style="font-size: 11px; font-weight: bolder;">{{ content.time }}</time>
+              </div> -->
               <div class="col-md-8">
                 <div class="speaker">
                   <img
@@ -368,7 +316,6 @@
 
           </div>
           <br>
-          <h6 style="margin-top:50px"><b>Disclaimer:</b><br>This crash course will not make you a data scientist, but will enable you to use applied foundations of data science practices in your existing job roles.</h6>
         </div>
 
       
@@ -387,14 +334,7 @@
           </div>
           
       </div>
-      <div class="row justify-content-center" style="margin-top: 120px;">
-        <h2 class="text-center"><span class="highlight">Reserve your seat</span></h2>
-
-        <a href="https://pages.razorpay.com/hands-on-datascience-bootcamp" class="btn btn-block btn-lg btn-success">Register Now In ₹599/ <small class="pull-right">*Inclusive of all taxes</small></a>
-
-        <h4>For more: WhatsApp Us: <a class="text-primary" href="tel:+916381042094">+916381042094</a></h4>
-
-      </div>
+      
     </div>
     </div>
 
@@ -597,7 +537,7 @@
     const app = new Vue({
       el: '#app',
       data: {
-        name: "Hands-On Foundational Data Science Bootcamp",
+        name: "Foundational Data Science Crash Course",
         contents: [
           [{
               title: "Introduction to Data Science",
