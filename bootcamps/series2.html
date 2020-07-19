@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>CleverInsight Bootcamp Series</title>
+  <title>Feature Engineering & Selection Using Python</title>
 
   <META NAME="author" CONTENT="Bastin Robins J">
   <META NAME="subject" CONTENT="CleverInsight">
@@ -106,10 +106,10 @@
 
 
     .day1 {
-      background: #fce0b8;
+      background: #cef0ff;
     }
     .day2 {
-      background: #fff6a7;
+      background: #c5ceff;
     }
     .day3 {
       background: #f3ff78;
@@ -264,16 +264,74 @@
   <main id="main">
 
     <!-- ======= Schedule Section ======= -->
-    <section id="schedule" class="section-with-bg">
+    <section id="schedule">
       <div class="container wow fadeInUp">
-      
+        <div class="">
+          <h2 style="font-weight: bold; color: rgb(81, 52, 9); margin-bottom: 0px;"><span class="highlight">{{ name }}</span></h2>
+          <small style="color: grey; font-style: italic; font-size: 14pt;"> Are you someone who works as <span class="label" style="color: #4CAF50;background: #edfadf;">Faculty, Programmer, Manager or Student</span> who seriously look for an way where you can learn the right way to clean and engineering data. This bootcamp is for you. We will use `Python` to solve all data challenges.</small>
+          <h5><span class="badge badge-success">3 Days - Series 2</span></h5>
+          <!-- <p>Here is our event schedule</p> -->
+          <div class="row">
+            <div class="col-md-6">
+              <!-- <img src="../webinars/assets/img/data-science.png" />
+              <img src="../webinars/assets/img/csg-data-analytics.png" /> -->
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="https://www.bizprospex.com/wp-content/uploads/2018/06/data-research-outsourcing-1080x675.png">
+                </div>
+                <div class="col-md-8" style="top:40px">
+                  <h4 style="margin-bottom: 2px;"><b>Key Takeaways</b></h4>
+
+                  <ul class="list-group">
+                    <li style="font-size: 20px; line-height: 1.1; font-style: italic;" class="text-muted">10 Hours of training</li>
+                    <li style="font-size: 20px; line-height: 1.1; font-style: italic;" class="text-muted">8+ LIVE Mentor Coding Sessions</li>
+                    <li style="font-size: 20px; line-height: 1.1; font-style: italic;" class="text-muted">Certificate Of Completion</li>
+
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-6 card card-body" style="border:2px dashed rgb(194, 196, 196);">
+              <!-- <h3 style="text-decoration: underline; font-weight: bolder;">Overview</h4> -->
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="../assets/img/3523655.jpeg" width="200px">
+                </div>
+                <div class="col-md-8">
+                  <h4 style="margin-bottom: 2px;"><b>Instructor:</b> Bastin Robins .J</h4>
+                  <h6>Chief Data Scientist</h6>
+                  <p>A seasoned Data Scientist who has successfully built data products for an array of sectors including FMCG's, Retail, Banking, Telecom, Social and Government organizations from scratch and deployed it successfully with great feedbacks.</p>
+                </div>
+
+                <div class="col-md-7">
+                  <h5><b class="text-info">Date:</b> 7th, 8th, 9th August 2020</h5>
+                  <h5><b class="text-info">Shareable Certificate:</b> LetSign Credentials </h5>
+                </div>
+
+                <div class="col-md-5">
+                  <h5><b class="text-info">Platform:</b> Google meet</h5>
+                  <h5><b class="text-info">Tools:</b> Google Colab</h5>
+
+                </div>
+                <div class="col-md-12">
+                   <p style="font-style: italic;">Feature engineering is the process of transforming raw data into features that better represent the underlying problem to the predictive models, resulting in improved model accuracy on unseen data. Feature engineering turn your inputs into things the algorithm can understand.</p>
+                   <a href="https://pages.razorpay.com/feature-engineering-bootcamp" class="btn btn-block btn-success">Register Now In ₹599/ <small class="pull-right">*Inclusive of all taxes</small></a>
+                </div>
+              </div>
+              
+
+            </div>
+          </div>
+        </div>  
+        
 
         <div class="tab-content row justify-content-center">          
           <!-- Schdule Day 1 -->
           <div role="tabpanel" class="col-lg-12 tab-pane fade show active" id="day-1">
             <div v-for="(day, index) in contents">
             <div class="row divider" :style="getDividerColor(index)">
-              <h3 class="mx-auto" style="font-weight: 800; text-align: 'center'; text-decoration: underline;">Track {{ index+1 }}</h3>
+              <h3 class="mx-auto" style="font-weight: 800; text-align: 'center'; text-decoration: underline;">Day {{ index+1 }}</h3>
             </div>
             <div :class="'row schedule-item '+ getDayColor(content.day)" v-for="content in day">
               <div class="col-md-2">
@@ -287,7 +345,7 @@
                     src="https://media-exp1.licdn.com/dms/image/C5603AQHiAp4NfT_JJQ/profile-displayphoto-shrink_400_400/0?e=1596672000&v=beta&t=WqjBs44sSJN_0-Pd3O660E4gra3HReHhgWDDlnl8rLs"
                     alt="Bastin Robin">
                 </div>
-                <a :href="content.file"><h4>{{ content.title }}</h4></a>
+                <h4>{{ content.title }}</h4>
                 <div style="margin-left: 70px;">
                 <p>
                   {{ content.description }} 
@@ -331,7 +389,7 @@
       <div class="row justify-content-center" style="margin-top: 120px;">
         <h2 class="text-center"><span class="highlight">Reserve your seat</span></h2>
 
-        <a href="https://pages.razorpay.com/hands-on-datascience-bootcamp" class="btn btn-block btn-lg btn-success">Register Now In ₹599/ <small class="pull-right">*Inclusive of all taxes</small></a>
+        <a href="https://pages.razorpay.com/feature-engineering-bootcamp" class="btn btn-block btn-lg btn-success">Register Now In ₹599/ <small class="pull-right">*Inclusive of all taxes</small></a>
 
         <h4>For more: WhatsApp Us: <a class="text-primary" href="tel:+916381042094">+916381042094</a></h4>
 
@@ -538,24 +596,103 @@
     const app = new Vue({
       el: '#app',
       data: {
-        name: "CleverInsight Bootcamp Series",
+        name: "Feature Engineering and Selection Using Python",
         contents: [
           [{
-              title: "Hands-On Foundational Data Science Bootcamp",
+              title: "Introduction to Feature Engineering",
               time: "05:00 PM - 05:30 PM",
-              description: "There’s no doubt about it: data scientists are in high demand. As of 2020, the average data scientist in the US makes over $113,000 a year, and data scientists in San Francisco make over $140,000. Learn data science and you could find yourself working in this promising, well-compensated field. Are you someone who works as Faculty, Programmer, Manager or Student who feels naive about data science? This bootcamp is your life saver with realtime examples to make things simpler. No Coding Experience Required!",
+              description: "Feature engineering is the process of transforming raw data into features that better represent the underlying problem to the predictive models, resulting in improved model accuracy on unseen data. Feature engineering turn your inputs into things the algorithm can understand.",
               day: 1,
-              date: '17th July to 19th July',
-              file: 'series1.html'
+              date: '7th August'
             },
             {
-              title: "Feature Engineering and Selection Using Python",
+              title: "Raw Data to Features",
               time: "05:30 PM - 06:00 PM",
-              description: "Learning about machine learning, Feature engineering is the process of transforming raw data into features that better represent the underlying problem to the predictive models, resulting in improved model accuracy on unseen data. Feature engineering turn your inputs into things the algorithm can understand.",
+              description: "We all know that a good ML model needs a large preprocessed dataset with good features. But the question is how to find good features.",
               day: 1,
-              date: '7th Aug - 9th Aug',
-              file: 'series2.html'
-            }]
+              date: '7th August'
+            },
+            
+            {
+              title: "Good vs Bad Variables",
+              time: "06:00 PM - 07:00 PM",
+              description: "Prefer clear and obvious meanings. Each feature should have a clear and obvious meaning to anyone on the project. For example, the following good feature is clearly named and the value makes sense with respect to the name",
+              day: 1,
+              date: '7th August'
+            },
+            {
+              title: "Characteristics Of Variables",
+              time: "07:00 PM - 08:00 PM",
+              description: "A variable is any characteristics, number, or quantity that can be measured or counted. A variable may also be called a data item. Age, sex, business income and expenses, country of birth, capital expenditure, class grades, eye colour and vehicle type are examples of variables.",
+              day: 1,
+              date: '7th August'
+            }],
+
+
+          [{
+              title: "Imputation of Missing Values",
+              time: "05:00 PM - 06:00 PM",
+              description: "In statistics, imputation is the process of replacing missing data with substituted values. ... That is to say, when one or more values are missing for a case, most statistical packages default to discarding any case that has a missing value, which may introduce bias or affect the representativeness of the results.",
+              day: 2,
+              date: '8th August'
+          },
+          {
+              title: "Categorical Variable Encoding",
+              time: "06:00 PM - 06:30 PM",
+              description: 'Machine learning models require all input and output variables to be numeric. This means that if your data contains categorical data, you must encode it to numbers before you can fit and evaluate a model.',
+              day: 2,
+              date: '8th August'
+          },
+          {
+            title: "Data Transformation",
+            time: "06:30 PM - 07:00 PM",
+            description: 'Data transformation is the process of converting data from one format to another, typically from the format of a source system into the required format of a destination system. Data transformation is a component of most data integration and data management tasks, such as data wrangling and data warehousing',
+            day: 2,
+            date: '8th August'
+          },
+          {
+            title: "Outlier Detection &  Handling",
+            time: "07:00 PM - 08:00 PM",
+            description: 'The presence of outliers in a classification or regression dataset can result in a poor fit and lower predictive modeling performance. ... Instead, automatic outlier detection methods can be used in the modeling pipeline and compared, just like other data preparation transforms that may be applied to the dataset',
+            day: 2,
+            date: '8th August'
+          }],
+          [{
+            title: "Feature Scaling & Normalization",
+            time: "05:00 PM - 06:30 PM",
+            description: 'Feature scaling is a method used to normalize the range of independent variables or features of data. In data processing, it is also known as data normalization and is generally performed during the data preprocessing step',
+            day: 3,
+            date: '9th August'
+          },
+      
+          {
+            title: "Handling Datetime Values",
+            time: "06:30 PM - 07:00 PM",
+            description: 'It’s worth reiterating, dates and times are a treasure trove of information and that is why data scientists love them so much.',
+            day: 3,
+            date: '9th August'
+          },
+          {
+            title: "Feature Engineering Pipelines",
+            time: "07:00 PM - 07:30 PM",
+            description: "I'll focus on feature engineering using sklearn pipelines . What are pipelines ?. In short pipelines are ways to organize your transformers.",
+            day: 3,
+            date: '9th August'
+          },
+          {
+            title: "QA Session",
+            time: "07:30 PM - 08:00 PM",
+            description: 'Open for questions and networking session',
+            day: 3,
+            date: '9th August'
+          },
+          {
+            title: "Feedback & Closing Note",
+            time: "08:00 PM - 08:30 PM",
+            description: 'Closing session',
+            day: 3,
+            date: '9th August'
+          }]
 
         ],
         testimonials: [
@@ -626,9 +763,9 @@
         getDividerColor: function(d) {
 
           if(d==0) {
-            return 'background: #ff9800';
+            return 'background: #2196F3';
           } else if (d==1) {
-            return 'background: #ffc107';
+            return 'background: #3F51B5';
           } else {
             return 'background: #8bc34a';
           }

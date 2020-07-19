@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>CleverInsight Bootcamp Series</title>
+  <title>Hands-On Foundational Data Science Bootcamp</title>
 
   <META NAME="author" CONTENT="Bastin Robins J">
   <META NAME="subject" CONTENT="CleverInsight">
@@ -266,14 +266,73 @@
     <!-- ======= Schedule Section ======= -->
     <section id="schedule" class="section-with-bg">
       <div class="container wow fadeInUp">
-      
+        <div class="">
+          <h2 style="font-weight: bold; color: rgb(81, 52, 9); margin-bottom: 0px;"><span class="highlight">{{ name }}</span></h2>
+          <small style="color: grey; font-style: italic; font-size: 14pt;"> Are you someone who works as <span class="label" style="color: #4CAF50;background: #edfadf;">Faculty, Programmer, Manager or Student</span> who feels naive about data science? This bootcamp is your life saver with realtime examples to make things simpler. <span class="label" style="color: #4CAF50;background: #edfadf;">No Coding Experience Required!</span></small>
+          <h5><span class="badge badge-success">3 Days - Series 1</span></h5>
+          <!-- <p>Here is our event schedule</p> -->
+          <div class="row">
+            <div class="col-md-6">
+              <!-- <img src="../webinars/assets/img/data-science.png" />
+              <img src="../webinars/assets/img/csg-data-analytics.png" /> -->
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="https://www.jing.fm/clipimg/full/220-2205720_r-for-data-science-data-science-cartoon-transparent.png">
+                </div>
+                <div class="col-md-8" style="top:40px">
+                  <h4 style="margin-bottom: 2px;"><b>Key Takeaways</b></h4>
+
+                  <ul class="list-group">
+                    <li style="font-size: 20px; line-height: 1.1; font-style: italic;" class="text-muted">10 Hours of training</li>
+                    <li style="font-size: 20px; line-height: 1.1; font-style: italic;" class="text-muted">8+ LIVE Mentor Coding Sessions</li>
+                    <li style="font-size: 20px; line-height: 1.1; font-style: italic;" class="text-muted">1 Github Project</li>
+                    <li style="font-size: 20px; line-height: 1.1; font-style: italic;" class="text-muted">Certificate Of Completion</li>
+
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-6 card card-body" style="border:2px dashed rgb(194, 196, 196);">
+              <!-- <h3 style="text-decoration: underline; font-weight: bolder;">Overview</h4> -->
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="https://media-exp1.licdn.com/dms/image/C5603AQHiAp4NfT_JJQ/profile-displayphoto-shrink_400_400/0?e=1596672000&v=beta&t=WqjBs44sSJN_0-Pd3O660E4gra3HReHhgWDDlnl8rLs" width="200px">
+                </div>
+                <div class="col-md-8">
+                  <h4 style="margin-bottom: 2px;"><b>Instructor:</b> Bastin Robins .J</h4>
+                  <h6>Chief Data Scientist</h6>
+                  <p>A seasoned Data Scientist who has successfully built data products for an array of sectors including FMCG's, Retail, Banking, Telecom, Social and Government organizations from scratch and deployed it successfully with great feedbacks.</p>
+                </div>
+
+                <div class="col-md-7">
+                  <h5><b class="text-info">Date:</b> 17th, 18th, 19th July 2020</h5>
+                  <h5><b class="text-info">Shareable Certificate:</b> LetSign Credentials </h5>
+                </div>
+
+                <div class="col-md-5">
+                  <h5><b class="text-info">Platform:</b> Google meet</h5>
+                  <h5><b class="text-info">Tools:</b> Google Colab</h5>
+
+                </div>
+                <div class="col-md-12">
+                   <p style="font-style: italic;">Its 2020 and by now you have heard about data science. This Crash Course is a quick way to start your journey with Data Science. The goal is to get you up to speed as quickly as possible on data science without all the fluff. We've designed this course to be as convenient as possible without sacrificing any of the essentials.</p>
+                   <a href="https://pages.razorpay.com/hands-on-datascience-bootcamp" class="btn btn-block btn-success disabled">Closed</a>
+                </div>
+              </div>
+              
+
+            </div>
+          </div>
+        </div>  
+        
 
         <div class="tab-content row justify-content-center">          
           <!-- Schdule Day 1 -->
           <div role="tabpanel" class="col-lg-12 tab-pane fade show active" id="day-1">
             <div v-for="(day, index) in contents">
             <div class="row divider" :style="getDividerColor(index)">
-              <h3 class="mx-auto" style="font-weight: 800; text-align: 'center'; text-decoration: underline;">Track {{ index+1 }}</h3>
+              <h3 class="mx-auto" style="font-weight: 800; text-align: 'center'; text-decoration: underline;">Day {{ index+1 }}</h3>
             </div>
             <div :class="'row schedule-item '+ getDayColor(content.day)" v-for="content in day">
               <div class="col-md-2">
@@ -287,7 +346,7 @@
                     src="https://media-exp1.licdn.com/dms/image/C5603AQHiAp4NfT_JJQ/profile-displayphoto-shrink_400_400/0?e=1596672000&v=beta&t=WqjBs44sSJN_0-Pd3O660E4gra3HReHhgWDDlnl8rLs"
                     alt="Bastin Robin">
                 </div>
-                <a :href="content.file"><h4>{{ content.title }}</h4></a>
+                <h4>{{ content.title }}</h4>
                 <div style="margin-left: 70px;">
                 <p>
                   {{ content.description }} 
@@ -331,7 +390,7 @@
       <div class="row justify-content-center" style="margin-top: 120px;">
         <h2 class="text-center"><span class="highlight">Reserve your seat</span></h2>
 
-        <a href="https://pages.razorpay.com/hands-on-datascience-bootcamp" class="btn btn-block btn-lg btn-success">Register Now In ₹599/ <small class="pull-right">*Inclusive of all taxes</small></a>
+        <a href="https://pages.razorpay.com/hands-on-datascience-bootcamp" class="btn btn-block btn-lg btn-success disabled">Closed</small></a>
 
         <h4>For more: WhatsApp Us: <a class="text-primary" href="tel:+916381042094">+916381042094</a></h4>
 
@@ -538,24 +597,144 @@
     const app = new Vue({
       el: '#app',
       data: {
-        name: "CleverInsight Bootcamp Series",
+        name: "Hands-On Foundational Data Science Bootcamp",
         contents: [
           [{
-              title: "Hands-On Foundational Data Science Bootcamp",
+              title: "Introduction to Data Science",
               time: "05:00 PM - 05:30 PM",
-              description: "There’s no doubt about it: data scientists are in high demand. As of 2020, the average data scientist in the US makes over $113,000 a year, and data scientists in San Francisco make over $140,000. Learn data science and you could find yourself working in this promising, well-compensated field. Are you someone who works as Faculty, Programmer, Manager or Student who feels naive about data science? This bootcamp is your life saver with realtime examples to make things simpler. No Coding Experience Required!",
+              description: "There’s no doubt about it: data scientists are in high demand. As of 2020, the average data scientist in the US makes over $113,000 a year, and data scientists in San Francisco make over $140,000. Learn data science and you could find yourself working in this promising, well-compensated field.",
               day: 1,
-              date: '17th July to 19th July',
-              file: 'series1.html'
+              date: '17th July'
             },
             {
-              title: "Feature Engineering and Selection Using Python",
+              title: "Analogy - Learn to Love Data",
               time: "05:30 PM - 06:00 PM",
-              description: "Learning about machine learning, Feature engineering is the process of transforming raw data into features that better represent the underlying problem to the predictive models, resulting in improved model accuracy on unseen data. Feature engineering turn your inputs into things the algorithm can understand.",
+              description: "Learning about machine learning, neural networks, image recognition, and other cutting-edge techniques is important. But most data science doesn’t involve any of it. As a working data scientist",
               day: 1,
-              date: '7th Aug - 9th Aug',
-              file: 'series2.html'
-            }]
+              date: '17th July'
+            },
+            {
+              title: "How to Define problem statement",
+              time: "06:00 PM - 06:30 PM",
+              description: "When a business approaches a data scientist with a problem they want to solve, they will always define the problem in layman's terms. This means the problem will not be clear enough, from an analytics point of view, to begin solving it right away. The problem needs to be well framed.",
+              day: 1,
+              date: '17th July'
+            },
+
+            {
+              title: "Break",
+              time: "06:30 PM - 06:45 PM",
+              description: "Take a short stretch",
+              day: 1,
+              date: '17th July'
+            },
+            {
+              title: "Basic Of Python Programming",
+              time: "06:45 PM - 07:30 PM",
+              description: "Python is one of the most popular languages used by data scientists and software developers alike for data science tasks. It can be used to predict outcomes, automate tasks, streamline processes, and offer business intelligence insights. It’s possible to work with data in vanilla Python, but there are quite a few open-source libraries that make Python data tasks much, much easier.",
+              day: 1,
+              date: '17th July'
+            },
+            {
+              title: "Understanding Essential Packages",
+              time: "07:30 PM - 08:30 PM",
+              description: 'Gain hands-on Experience in Python Packages like NumPy, Matplotlib & More. Master the Techniques of Python Deployment for Data Science & Work with Pandas library!.',
+              day: 1,
+              date: '17th July'
+            }],
+
+
+          [{
+            title: "Data Wrangling and Cleaning",
+            time: "05:00 PM - 05:30 PM",
+            description: '90% of your work will be data cleaning. Process of transforming and mapping data from one "raw" data form into another format with the intent of making it more appropriate and valuable for a variety of downstream purposes such as analytics.',
+            day: 2,
+            date: '18th July'
+          },
+          {
+            title: "Data Visualization & Grammar of Graphics",
+            time: "05:30 PM - 06:30 PM",
+            description: 'we will cover the layered framework which we leveraged to build these visualizations, called ‘The Grammar of Graphics’. We will also explore essential concepts behind the layered Grammar of Graphics framework and discuss how we can use each specific layered component to build effective visualization on multi-dimensional data.',
+            day: 2,
+            date: '18th July'
+          },
+          {
+            title: "Exploratory Data Analysis",
+            time: "06:30 PM - 07:30 PM",
+            description: 'Exploratory Data Analysis refers to the critical process of performing initial investigations on data so as to discover patterns,to spot anomalies,to test hypothesis and to check assumptions with the help of summary statistics and graphical representations. Part of communicating insights is understanding the topic and theory — you’ll never be able to explain to others something that you don’t understand yourself. Another part is understanding how to clearly organize your results. The final piece is being able to explain your analysis clearly.',
+            day: 2,
+            date: '18th July'
+          },
+          {
+            title: "Break",
+            time: "07:30 PM - 07:45 PM",
+            description: "Take a short stretch",
+            day: 2,
+            date: '18th July'
+          },
+          {
+            title: "Machine Learning Models",
+            time: "07:45 PM - 08:15 PM",
+            description: 'A machine learning model is a file that has been trained to recognize certain types of patterns. You train a model over a set of data, providing it an algorithm that it can use to reason over and learn from those data.',
+            day: 2,
+            date: '18th July'
+          },
+          {
+            title: "How to Pick Right ML Model",
+            time: "8:15 PM - 08:30 PM",
+            description: 'Knowing a few algorithms really well is better than knowing a little about many algorithms. If you know linear regression, k-means clustering, and logistic regression well, can explain and interpret their results, and can actually complete a project from start to finish with them, you’ll be much more employable than if you know every single algorithm, but can’t use them.',
+            day: 2,
+            date: '18th July'
+          }],
+          [{
+            title: "Build Capstone Usecase with Machine Learning Model",
+            time: "04:00 PM - 05:30 PM",
+            description: 'Create a project that you can use to showcase your Data Science skills to prospective employers. Apply various data science and machine learning techniques. Let’s jump straight into some Machine Learning project ideas that will strengthen your base and allow you to climb up the ladder. ',
+            day: 3,
+            date: '19th July'
+          },
+          {
+            title: "Grid Search & Hyperparameter Tuning",
+            time: "05:30 PM - 06:30 PM",
+            description: 'Hyperparameters are crucial as they control the overall behaviour of a machine learning model. The ultimate goal is to find an optimal combination of hyperparameters that minimizes a predefined loss function to give better results.',
+            day: 3,
+            date: '19th July'
+          },
+          {
+            title: "Break",
+            time: "06:30 PM - 06:45 PM",
+            description: "Take a short stretch",
+            day: 3,
+            date: '19th July'
+          },
+          {
+            title: "Interpreting the Model & Save Model",
+            time: "06:45 PM - 07:15 PM",
+            description: 'Interpreting Machine Learning models is no longer a luxury but a necessity given the rapid adoption of AI in the industry. How human interpret machine learning where we look at essential concepts pertaining to major strategies for model interpretation.',
+            day: 3,
+            date: '19th July'
+          },
+          {
+            title: "Deploying Model as Webservice",
+            time: "07:15 PM - 07:45 PM",
+            description: 'If an ML model makes a prediction in Jupyter, is anyone around to hear it? Probably not. Deploying models is the key to making them useful.',
+            day: 3,
+            date: '19th July'
+          },
+          {
+            title: "QA Session",
+            time: "07:45 PM - 08:00 PM",
+            description: 'Open for questions and networking session',
+            day: 3,
+            date: '19th July'
+          },
+          {
+            title: "Feedback & Closing Note",
+            time: "08:00 PM - 08:30 PM",
+            description: 'Closing session',
+            day: 3,
+            date: '19th July'
+          }]
 
         ],
         testimonials: [
